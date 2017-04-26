@@ -69,6 +69,27 @@
     return self;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.tabBgVeiw.frame = self.bounds;
+    
+    CGFloat width = self.bounds.size.width / self.sourceList.count;
+    
+    for (NSInteger i = 0; i < [self subviews].count; i++) {
+        
+        UIView *view = [self subviews][i];
+        
+        if ([view isKindOfClass:[UIButton class]]) {
+            
+            view.frame = CGRectMake((view.tag - LTButtonTypeLive) * width, 0, width, self.frame.size.height);
+            
+        }
+        
+    }
+}
+
 - (void)clickItem:(UIButton *)button
 {
     if ([self.delegate respondsToSelector:@selector(tabBar:clickButton:)]) {
