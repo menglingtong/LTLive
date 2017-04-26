@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LTLaunchViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="fZK-4n-BOn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-O7-JCE">
+                    <rect key="frame" x="311" y="0.0" width="64" height="64"/>
+                    <state key="normal" image="launch_close"/>
+                    <connections>
+                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="nVI-wd-y3N"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DHF-O7-JCE" secondAttribute="trailing" id="0rI-fD-6Nb"/>
+                <constraint firstItem="DHF-O7-JCE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3cd-ph-mvC"/>
+                <constraint firstAttribute="bottom" secondItem="fZK-4n-BOn" secondAttribute="bottom" id="9up-Hx-uEq"/>
+                <constraint firstItem="fZK-4n-BOn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a0f-gr-Bdo"/>
+                <constraint firstAttribute="trailing" secondItem="fZK-4n-BOn" secondAttribute="trailing" id="euv-pG-O4t"/>
+                <constraint firstItem="fZK-4n-BOn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oAe-PU-pdU"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_zbfx" width="16" height="16"/>
+        <image name="launch_close" width="64" height="64"/>
+    </resources>
+</document>

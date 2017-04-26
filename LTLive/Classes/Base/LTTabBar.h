@@ -10,6 +10,7 @@
 
 typedef NS_ENUM(NSInteger, LTButtonType) {
     
+    LTButtonTypeLaunch = 10, // 启动直播
     LTButtonTypeLive = 100, // 直播展示
     LTButtonTypeMine, // 我的页面
     

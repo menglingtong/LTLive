@@ -1,24 +1,27 @@
 //
-//  LTBaseViewController.m
+//  LTLaunchViewController.m
 //  LTLive
 //
 //  Created by 孟令通 on 2017/4/26.
 //  Copyright © 2017年 LryMlt. All rights reserved.
 //
 
-#import "LTBaseViewController.h"
+#import "LTLaunchViewController.h"
 
-@interface LTBaseViewController ()
+@interface LTLaunchViewController ()
 
 @end
 
-@implementation LTBaseViewController
+@implementation LTLaunchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (IBAction)closeLaunch:(id)sender {
     
-    self.view.backgroundColor = RGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255));
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

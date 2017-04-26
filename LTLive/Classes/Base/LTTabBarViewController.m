@@ -12,6 +12,8 @@
 
 #import "LTBaseNavViewController.h"
 
+#import "LTLaunchViewController.h"
+
 @interface LTTabBarViewController ()<LTTabBarDelegate>
 
 @property (nonatomic, strong) LTTabBar *ltTabBar;
@@ -41,6 +43,10 @@
     
     // 加载tabbar
     [self.tabBar addSubview:self.ltTabBar];
+    
+    // 去除tabbar阴影线
+    [[UITabBar appearance] setShadowImage:[UIImage new]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage new]];
 }
 
 - (void)configViewControllers
@@ -67,7 +73,16 @@
 #pragma mark LTTabBar delegate方法
 - (void)tabBar:(LTTabBar *)tabBar clickButton:(LTButtonType)buttonId
 {
+    if (buttonId != LTButtonTypeLaunch) {
+        
+        self.selectedIndex = buttonId - LTButtonTypeLive;
+        
+        return;
+    }
     
+    LTLaunchViewController *lanuchVC = [LTLaunchViewController new];
+    
+    [self presentViewController:lanuchVC animated:YES completion:nil];
 }
 
 

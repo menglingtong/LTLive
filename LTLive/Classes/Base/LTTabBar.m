@@ -14,9 +14,31 @@
 
 @property (nonatomic, strong) NSArray *sourceList;
 
+@property (nonatomic, strong) UIButton *lastButton;
+
+@property (nonatomic, strong) UIButton *cameraButton;
+
 @end
 
 @implementation LTTabBar
+
+- (UIButton *)cameraButton
+{
+    if (!_cameraButton) {
+        
+        _cameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        _cameraButton.tag = LTButtonTypeLaunch;
+        
+        [_cameraButton setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+        
+        _cameraButton.adjustsImageWhenHighlighted = NO;
+        
+        [_cameraButton addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _cameraButton;
+}
 
 - (NSArray *)sourceList
 {
@@ -50,7 +72,13 @@
         
         for (NSInteger i = 0; i < self.sourceList.count; i++) {
             
+            
+            
             UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
+            
+            // 不让图片在高亮下改变
+            item.adjustsImageWhenHighlighted = NO;
+            
             // 按钮正常状态
             [item setImage:[UIImage imageNamed:[self.sourceList objectAtIndex:i]] forState:UIControlStateNormal];
             
@@ -61,9 +89,21 @@
             
             item.tag = LTButtonTypeLive + i;
             
+            if (i == 0) {
+                
+                item.selected = YES;
+                
+                self.lastButton = item;
+                
+            }
+            
             [self addSubview:item];
             
         }
+        
+        // 添加直播按钮
+        [self addSubview:self.cameraButton];
+        
         
     }
     return self;
@@ -88,6 +128,10 @@
         }
         
     }
+    
+    
+    [self.cameraButton sizeToFit];
+    self.cameraButton.center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height - 50);
 }
 
 - (void)clickItem:(UIButton *)button
@@ -101,6 +145,32 @@
     if (self.block) {
         self.block(self, button.tag);
     }
+    
+    if (button.tag == LTButtonTypeLaunch) {
+        
+        return; 
+    }
+    
+    self.lastButton.selected = NO;
+    
+    button.selected = YES;
+    
+    self.lastButton = button;
+    
+    // 设置动画
+    [UIView animateWithDuration:0.2 animations:^{
+        
+        button.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        
+    } completion:^(BOOL finished) {
+        // 恢复动画
+        [UIView animateWithDuration:0.2 animations:^{
+            
+            button.transform = CGAffineTransformIdentity;
+            
+        }];
+        
+    }];
 }
 
 
