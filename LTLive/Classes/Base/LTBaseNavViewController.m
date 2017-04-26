@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     
     self.navigationBar.barTintColor = [UIColor colorWithRed:0.95 green:0.24 blue:0.11 alpha:1.00];
-    
+    self.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
