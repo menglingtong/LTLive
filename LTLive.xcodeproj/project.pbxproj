@@ -24,6 +24,12 @@
 		8DE44E091EB081FE005B12FC /* LTBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E081EB081FE005B12FC /* LTBaseNavViewController.m */; };
 		8DE44E121EB0B652005B12FC /* LTLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E101EB0B652005B12FC /* LTLaunchViewController.m */; };
 		8DE44E131EB0B652005B12FC /* LTLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44E111EB0B652005B12FC /* LTLaunchViewController.xib */; };
+		8DE44E171EB0FCC8005B12FC /* LTFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E151EB0FCC8005B12FC /* LTFocusViewController.m */; };
+		8DE44E181EB0FCC8005B12FC /* LTFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44E161EB0FCC8005B12FC /* LTFocusViewController.xib */; };
+		8DE44E1C1EB0FCD3005B12FC /* LTHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E1A1EB0FCD3005B12FC /* LTHotViewController.m */; };
+		8DE44E1D1EB0FCD3005B12FC /* LTHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44E1B1EB0FCD3005B12FC /* LTHotViewController.xib */; };
+		8DE44E211EB0FD10005B12FC /* LTNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E1F1EB0FD10005B12FC /* LTNearViewController.m */; };
+		8DE44E221EB0FD10005B12FC /* LTNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44E201EB0FD10005B12FC /* LTNearViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +64,15 @@
 		8DE44E0F1EB0B652005B12FC /* LTLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLaunchViewController.h; sourceTree = "<group>"; };
 		8DE44E101EB0B652005B12FC /* LTLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLaunchViewController.m; sourceTree = "<group>"; };
 		8DE44E111EB0B652005B12FC /* LTLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTLaunchViewController.xib; sourceTree = "<group>"; };
+		8DE44E141EB0FCC8005B12FC /* LTFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTFocusViewController.h; sourceTree = "<group>"; };
+		8DE44E151EB0FCC8005B12FC /* LTFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTFocusViewController.m; sourceTree = "<group>"; };
+		8DE44E161EB0FCC8005B12FC /* LTFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTFocusViewController.xib; sourceTree = "<group>"; };
+		8DE44E191EB0FCD3005B12FC /* LTHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTHotViewController.h; sourceTree = "<group>"; };
+		8DE44E1A1EB0FCD3005B12FC /* LTHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTHotViewController.m; sourceTree = "<group>"; };
+		8DE44E1B1EB0FCD3005B12FC /* LTHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTHotViewController.xib; sourceTree = "<group>"; };
+		8DE44E1E1EB0FD10005B12FC /* LTNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNearViewController.h; sourceTree = "<group>"; };
+		8DE44E1F1EB0FD10005B12FC /* LTNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNearViewController.m; sourceTree = "<group>"; };
+		8DE44E201EB0FD10005B12FC /* LTNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTNearViewController.xib; sourceTree = "<group>"; };
 		9AF0F2F0799BD79ED9B70B27 /* libPods-LTLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LTLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -236,6 +251,15 @@
 				8DE44E021EB07F4C005B12FC /* LTMineViewController.h */,
 				8DE44E031EB07F4C005B12FC /* LTMineViewController.m */,
 				8DE44E041EB07F4C005B12FC /* LTMineViewController.xib */,
+				8DE44E141EB0FCC8005B12FC /* LTFocusViewController.h */,
+				8DE44E151EB0FCC8005B12FC /* LTFocusViewController.m */,
+				8DE44E161EB0FCC8005B12FC /* LTFocusViewController.xib */,
+				8DE44E191EB0FCD3005B12FC /* LTHotViewController.h */,
+				8DE44E1A1EB0FCD3005B12FC /* LTHotViewController.m */,
+				8DE44E1B1EB0FCD3005B12FC /* LTHotViewController.xib */,
+				8DE44E1E1EB0FD10005B12FC /* LTNearViewController.h */,
+				8DE44E1F1EB0FD10005B12FC /* LTNearViewController.m */,
+				8DE44E201EB0FD10005B12FC /* LTNearViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -391,7 +415,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE44DD41EAF30E3005B12FC /* LaunchScreen.storyboard in Resources */,
+				8DE44E221EB0FD10005B12FC /* LTNearViewController.xib in Resources */,
 				8DE44E011EB07F0C005B12FC /* LTMainViewController.xib in Resources */,
+				8DE44E1D1EB0FCD3005B12FC /* LTHotViewController.xib in Resources */,
+				8DE44E181EB0FCC8005B12FC /* LTFocusViewController.xib in Resources */,
 				8DE44DD11EAF30E3005B12FC /* Assets.xcassets in Resources */,
 				8DE44E131EB0B652005B12FC /* LTLaunchViewController.xib in Resources */,
 				8DE44DCF1EAF30E3005B12FC /* Main.storyboard in Resources */,
@@ -456,13 +483,16 @@
 			files = (
 				8DE44DE71EAF4DD5005B12FC /* ViewController.m in Sources */,
 				8DE44E051EB07F4C005B12FC /* LTMineViewController.m in Sources */,
+				8DE44E211EB0FD10005B12FC /* LTNearViewController.m in Sources */,
 				8DE44DE31EAF3618005B12FC /* AppDelegate.m in Sources */,
 				8DE44DEC1EB05A35005B12FC /* LTTabBarViewController.m in Sources */,
 				8DE44E001EB07F0C005B12FC /* LTMainViewController.m in Sources */,
 				8DE44DC61EAF30E3005B12FC /* main.m in Sources */,
 				8DE44DEF1EB05A55005B12FC /* LTTabBar.m in Sources */,
 				8DE44DFC1EB07EC4005B12FC /* LTBaseViewController.m in Sources */,
+				8DE44E171EB0FCC8005B12FC /* LTFocusViewController.m in Sources */,
 				8DE44E091EB081FE005B12FC /* LTBaseNavViewController.m in Sources */,
+				8DE44E1C1EB0FCD3005B12FC /* LTHotViewController.m in Sources */,
 				8DE44E121EB0B652005B12FC /* LTLaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

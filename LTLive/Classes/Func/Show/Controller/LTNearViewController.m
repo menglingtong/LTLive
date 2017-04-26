@@ -1,28 +1,22 @@
 //
-//  LTLaunchViewController.m
+//  LTNearViewController.m
 //  LTLive
 //
-//  Created by 孟令通 on 2017/4/26.
+//  Created by 孟令通 on 2017/4/27.
 //  Copyright © 2017年 LryMlt. All rights reserved.
 //
 
-#import "LTLaunchViewController.h"
+#import "LTNearViewController.h"
 
-@interface LTLaunchViewController ()
-
+@interface LTNearViewController ()
 
 @end
 
-@implementation LTLaunchViewController
+@implementation LTNearViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-}
-
-- (IBAction)closeLaunch:(id)sender {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

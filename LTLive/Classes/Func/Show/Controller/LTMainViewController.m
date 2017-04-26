@@ -10,6 +10,8 @@
 
 @interface LTMainViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *contentScroll;
+
 @end
 
 @implementation LTMainViewController
@@ -22,6 +24,21 @@
 }
 
 - (void)initUI
+{
+    // 添加左右按钮
+    [self setupNav];
+    
+    // 添加子视图控制器
+    [self setupChildViewControllers];
+    
+}
+
+- (void)setupChildViewControllers
+{
+    
+}
+
+- (void)setupNav
 {
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"global_search"] style:UIBarButtonItemStyleDone target:nil action:nil];
     
