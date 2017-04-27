@@ -30,6 +30,7 @@
 		8DE44E1D1EB0FCD3005B12FC /* LTHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44E1B1EB0FCD3005B12FC /* LTHotViewController.xib */; };
 		8DE44E211EB0FD10005B12FC /* LTNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E1F1EB0FD10005B12FC /* LTNearViewController.m */; };
 		8DE44E221EB0FD10005B12FC /* LTNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44E201EB0FD10005B12FC /* LTNearViewController.xib */; };
+		8DE44E251EB1B782005B12FC /* LTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E241EB1B782005B12FC /* LTMainTopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		8DE44E1E1EB0FD10005B12FC /* LTNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNearViewController.h; sourceTree = "<group>"; };
 		8DE44E1F1EB0FD10005B12FC /* LTNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNearViewController.m; sourceTree = "<group>"; };
 		8DE44E201EB0FD10005B12FC /* LTNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTNearViewController.xib; sourceTree = "<group>"; };
+		8DE44E231EB1B782005B12FC /* LTMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMainTopView.h; sourceTree = "<group>"; };
+		8DE44E241EB1B782005B12FC /* LTMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMainTopView.m; sourceTree = "<group>"; };
 		9AF0F2F0799BD79ED9B70B27 /* libPods-LTLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LTLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -274,6 +277,8 @@
 		8DE44DF71EB05B57005B12FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8DE44E231EB1B782005B12FC /* LTMainTopView.h */,
+				8DE44E241EB1B782005B12FC /* LTMainTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 				8DE44DEC1EB05A35005B12FC /* LTTabBarViewController.m in Sources */,
 				8DE44E001EB07F0C005B12FC /* LTMainViewController.m in Sources */,
 				8DE44DC61EAF30E3005B12FC /* main.m in Sources */,
+				8DE44E251EB1B782005B12FC /* LTMainTopView.m in Sources */,
 				8DE44DEF1EB05A55005B12FC /* LTTabBar.m in Sources */,
 				8DE44DFC1EB07EC4005B12FC /* LTBaseViewController.m in Sources */,
 				8DE44E171EB0FCC8005B12FC /* LTFocusViewController.m in Sources */,

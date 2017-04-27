@@ -7,6 +7,7 @@
 //
 
 #import "LTMainViewController.h"
+#import "LTMainTopView.h"
 
 @interface LTMainViewController ()<UIScrollViewDelegate>
 
@@ -14,9 +15,21 @@
 
 @property (nonatomic, strong) NSArray *dataSource;
 
+@property (nonatomic, strong) LTMainTopView *topView;
+
 @end
 
 @implementation LTMainViewController
+
+- (LTMainTopView *)topView
+{
+    if (!_topView) {
+        
+        _topView = [[LTMainTopView alloc] initWithFrame:CGRectMake(0, 0, 200, 50) titleNames:self.dataSource];
+    }
+    
+    return _topView;
+}
 
 - (NSArray *)dataSource
 {
@@ -78,6 +91,8 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"global_search"] style:UIBarButtonItemStyleDone target:nil action:nil];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_button_more"] style:UIBarButtonItemStyleDone target:nil action:nil];
+    
+    self.navigationItem.titleView = self.topView;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
