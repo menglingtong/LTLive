@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^MainTopBlock)(NSInteger tag);
+
 @interface LTMainTopView : UIView
 
+@property (nonatomic, copy) MainTopBlock block;
+
 - (instancetype)initWithFrame:(CGRect)frame titleNames:(NSArray *)titleNames;
+
+- (void)scrollLineView:(NSInteger)tag;
 
 @end

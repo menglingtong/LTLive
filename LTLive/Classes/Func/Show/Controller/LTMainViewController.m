@@ -26,6 +26,18 @@
     if (!_topView) {
         
         _topView = [[LTMainTopView alloc] initWithFrame:CGRectMake(0, 0, 200, 50) titleNames:self.dataSource];
+        
+        @weakify(self);
+        
+        _topView.block = ^(NSInteger tag){
+            
+            @strongify(self);
+          
+            CGPoint point = CGPointMake(tag * SCREEN_WIDTH, self.contentScroll.contentOffset.y);
+            
+            [self.contentScroll setContentOffset:point animated:YES];
+            
+        };
     }
     
     return _topView;
@@ -95,7 +107,8 @@
     self.navigationItem.titleView = self.topView;
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+// 动画结束调用
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     CGFloat width = SCREEN_WIDTH;
     
@@ -105,6 +118,8 @@
     
     // 获取vc索引值
     NSInteger vcIndex = offset / width;
+    
+    [self.topView scrollLineView:vcIndex];
     
     // 根据索引值获取vc引用
     UIViewController *vc = self.childViewControllers[vcIndex];
@@ -119,6 +134,12 @@
     vc.view.frame = CGRectMake(offset, 0, scrollView.frame.size.width, height);
     // 将控制器的view 添加到 scrollview上
     [scrollView addSubview:vc.view];
+}
+
+// 滑动结束调用
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self scrollViewDidEndScrollingAnimation:scrollView];
 }
 
 - (void)didReceiveMemoryWarning {
