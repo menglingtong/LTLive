@@ -65,6 +65,9 @@
     // 设置scrollview的contentsize
     self.contentScroll.contentSize = CGSizeMake(SCREEN_WIDTH * self.dataSource.count, 0);
     
+    // 默认先展示第二个页面
+    self.contentScroll.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
+    
     // 进入主控制器加载第一个页面
     [self scrollViewDidEndDecelerating:self.contentScroll];
     
@@ -86,7 +89,7 @@
     CGFloat offset = scrollView.contentOffset.x;
     
     // 获取vc索引值
-    NSInteger vcIndex = scrollView.contentOffset.x / width;
+    NSInteger vcIndex = offset / width;
     
     // 根据索引值获取vc引用
     UIViewController *vc = self.childViewControllers[vcIndex];
@@ -98,7 +101,7 @@
     }
     
     // 设置控制器view的大小
-    vc.view.frame = CGRectMake(offset, 0, width, height);
+    vc.view.frame = CGRectMake(offset, 0, scrollView.frame.size.width, height);
     // 将控制器的view 添加到 scrollview上
     [scrollView addSubview:vc.view];
 }
