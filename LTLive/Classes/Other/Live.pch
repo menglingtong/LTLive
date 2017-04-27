@@ -16,6 +16,8 @@
 
 #import "LTMacros.h"
 
+#import "LTAPIConfig.h"
+
 #import <YYKit.h>
 
 #endif /* LTLive_pch */
