@@ -12,9 +12,31 @@
 
 @interface LTHotViewController ()
 
+@property (nonatomic, strong) NSMutableArray *dataSource;
+
 @end
 
 @implementation LTHotViewController
+
+- (NSMutableArray *)dataSource
+{
+    if (!_dataSource) {
+        
+        _dataSource = [NSMutableArray array];
+    }
+    
+    return _dataSource;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,10 +57,13 @@
 {
     [LTShowHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
         
-        NSLog(@"%@", obj);
+        [self.dataSource addObjectsFromArray:obj];
+        
+        [self.tableView reloadData];
         
     } failed:^(id obj) {
         
+        NSLog(@"%@", obj);
         
     }];
 }

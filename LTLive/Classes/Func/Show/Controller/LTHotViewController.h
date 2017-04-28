@@ -8,6 +8,6 @@
 
 #import "LTBaseViewController.h"
 
-@interface LTHotViewController : LTBaseViewController
+@interface LTHotViewController : UITableViewController
 
 @end

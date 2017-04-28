@@ -9,6 +9,8 @@
 #import "LTShowHandler.h"
 #import "HttpTool.h"
 
+#import "LTLive.h"
+
 @implementation LTShowHandler
 
 +(void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed
@@ -21,7 +23,10 @@
         }
         else
         {
-            success(json);
+            
+            NSArray *lives = [LTLive mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+            
+            success(lives);
         }
         
     } failure:^(NSError *error) {
