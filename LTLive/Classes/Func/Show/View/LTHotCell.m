@@ -46,6 +46,11 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    self.headView.layer.cornerRadius = self.headView.width / 2.0;
+    
+    self.headView.clipsToBounds = YES;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
