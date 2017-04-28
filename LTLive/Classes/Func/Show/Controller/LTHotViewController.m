@@ -10,6 +10,10 @@
 
 #import "LTShowHandler.h"
 
+#import "LTHotCell.h"
+
+static NSString *identifier = @"LTHotCell";
+
 @interface LTHotViewController ()
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -35,7 +39,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    
+    LTHotCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    cell.live = [_dataSource objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70 + SCREEN_WIDTH;
 }
 
 - (void)viewDidLoad {
@@ -50,7 +64,7 @@
 
 - (void)initUI
 {
-    
+    [self.tableView registerNib:[UINib nibWithNibName:@"LTHotCell" bundle:nil] forCellReuseIdentifier:identifier];
 }
 
 - (void)loadData
