@@ -9,10 +9,12 @@ target 'LTLive' do
 
 pod 'AFNetworking', '~> 3.1.0'
 
-pod 'SDWebImage', '~> 4.0.0'
+pod 'SDWebImage', '~> 3.8.1'
 
 pod 'Masonry', '~> 1.0.2'
 
 pod 'YYKit', '~> 1.0.9'
+
+pod 'MJExtension', '~> 3.0.13'
 
 end

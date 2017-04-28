@@ -8,6 +8,8 @@
 
 #import "LTHotViewController.h"
 
+#import "LTShowHandler.h"
+
 @interface LTHotViewController ()
 
 @end
@@ -17,6 +19,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self initUI];
+    
+    [self loadData];
+    
+}
+
+- (void)initUI
+{
+    
+}
+
+- (void)loadData
+{
+    [LTShowHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
+        
+        NSLog(@"%@", obj);
+        
+    } failed:^(id obj) {
+        
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,7 +15,7 @@
 #define IMAGE_HOST @"http://img.meelive.cn/"
 
 //首页数据
-#define API_LiveGetTop @"api/live/gettop"
+#define API_LiveGetTop @"api/live/gettop?uid=319901879"
 
 //广告地址
 #define API_Advertise @"advertise/get"

@@ -10,6 +10,8 @@
 		125359BF405E489EB3F58E1F /* libPods-LTLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF0F2F0799BD79ED9B70B27 /* libPods-LTLive.a */; };
 		8D1DF1761EB2278F00366B38 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DF1731EB2278F00366B38 /* HttpTool.m */; };
 		8D1DF1771EB2278F00366B38 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DF1751EB2278F00366B38 /* UIImageView+SDWebImage.m */; };
+		8D1DF17A1EB22DAD00366B38 /* LTBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DF1791EB22DAD00366B38 /* LTBaseHandler.m */; };
+		8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9361EB244E00035C243 /* LTShowHandler.m */; };
 		8DE44DC61EAF30E3005B12FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44DC51EAF30E3005B12FC /* main.m */; };
 		8DE44DCF1EAF30E3005B12FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44DCD1EAF30E3005B12FC /* Main.storyboard */; };
 		8DE44DD11EAF30E3005B12FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44DD01EAF30E3005B12FC /* Assets.xcassets */; };
@@ -43,6 +45,10 @@
 		8D1DF1731EB2278F00366B38 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		8D1DF1741EB2278F00366B38 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		8D1DF1751EB2278F00366B38 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		8D1DF1781EB22DAD00366B38 /* LTBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBaseHandler.h; sourceTree = "<group>"; };
+		8D1DF1791EB22DAD00366B38 /* LTBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTBaseHandler.m; sourceTree = "<group>"; };
+		8D6EF9351EB244E00035C243 /* LTShowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTShowHandler.h; sourceTree = "<group>"; };
+		8D6EF9361EB244E00035C243 /* LTShowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTShowHandler.m; sourceTree = "<group>"; };
 		8DE44DC11EAF30E3005B12FC /* LTLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE44DC51EAF30E3005B12FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DE44DCE1EAF30E3005B12FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -210,6 +216,8 @@
 				8DE44DFB1EB07EC4005B12FC /* LTBaseViewController.m */,
 				8DE44E071EB081FE005B12FC /* LTBaseNavViewController.h */,
 				8DE44E081EB081FE005B12FC /* LTBaseNavViewController.m */,
+				8D1DF1781EB22DAD00366B38 /* LTBaseHandler.h */,
+				8D1DF1791EB22DAD00366B38 /* LTBaseHandler.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -298,6 +306,8 @@
 		8DE44DF81EB07E8D005B12FC /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				8D6EF9351EB244E00035C243 /* LTShowHandler.h */,
+				8D6EF9361EB244E00035C243 /* LTShowHandler.m */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -501,9 +511,11 @@
 				8DE44DE71EAF4DD5005B12FC /* ViewController.m in Sources */,
 				8DE44E051EB07F4C005B12FC /* LTMineViewController.m in Sources */,
 				8D1DF1771EB2278F00366B38 /* UIImageView+SDWebImage.m in Sources */,
+				8D1DF17A1EB22DAD00366B38 /* LTBaseHandler.m in Sources */,
 				8DE44E211EB0FD10005B12FC /* LTNearViewController.m in Sources */,
 				8DE44DE31EAF3618005B12FC /* AppDelegate.m in Sources */,
 				8DE44DEC1EB05A35005B12FC /* LTTabBarViewController.m in Sources */,
+				8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */,
 				8DE44E001EB07F0C005B12FC /* LTMainViewController.m in Sources */,
 				8DE44DC61EAF30E3005B12FC /* main.m in Sources */,
 				8DE44E251EB1B782005B12FC /* LTMainTopView.m in Sources */,
