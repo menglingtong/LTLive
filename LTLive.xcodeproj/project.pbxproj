@@ -15,6 +15,8 @@
 		8D1FAE6D1EB7448C00846F74 /* LTPlayerCoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE6B1EB7448C00846F74 /* LTPlayerCoverViewController.xib */; };
 		8D1FAE701EB77E5800846F74 /* LTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE6F1EB77E5800846F74 /* LTLocationManager.m */; };
 		8D1FAE721EB7984800846F74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1FAE711EB7984800846F74 /* CoreLocation.framework */; };
+		8D1FAE811EB7B8B900846F74 /* LTNearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE7F1EB7B8B900846F74 /* LTNearCell.m */; };
+		8D1FAE821EB7B8B900846F74 /* LTNearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE801EB7B8B900846F74 /* LTNearCell.xib */; };
 		8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9361EB244E00035C243 /* LTShowHandler.m */; };
 		8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9391EB2F8540035C243 /* LTLive.m */; };
 		8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF93C1EB3056D0035C243 /* LTCreator.m */; };
@@ -76,6 +78,9 @@
 		8D1FAE6E1EB77E5800846F74 /* LTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLocationManager.h; sourceTree = "<group>"; };
 		8D1FAE6F1EB77E5800846F74 /* LTLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLocationManager.m; sourceTree = "<group>"; };
 		8D1FAE711EB7984800846F74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8D1FAE7E1EB7B8B900846F74 /* LTNearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNearCell.h; sourceTree = "<group>"; };
+		8D1FAE7F1EB7B8B900846F74 /* LTNearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNearCell.m; sourceTree = "<group>"; };
+		8D1FAE801EB7B8B900846F74 /* LTNearCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTNearCell.xib; sourceTree = "<group>"; };
 		8D6EF9351EB244E00035C243 /* LTShowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTShowHandler.h; sourceTree = "<group>"; };
 		8D6EF9361EB244E00035C243 /* LTShowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTShowHandler.m; sourceTree = "<group>"; };
 		8D6EF9381EB2F8540035C243 /* LTLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLive.h; sourceTree = "<group>"; };
@@ -425,6 +430,9 @@
 				8D6EF9441EB32FEA0035C243 /* LTHotCell.h */,
 				8D6EF9451EB32FEA0035C243 /* LTHotCell.m */,
 				8D6EF9461EB32FEA0035C243 /* LTHotCell.xib */,
+				8D1FAE7E1EB7B8B900846F74 /* LTNearCell.h */,
+				8D1FAE7F1EB7B8B900846F74 /* LTNearCell.m */,
+				8D1FAE801EB7B8B900846F74 /* LTNearCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -585,6 +593,7 @@
 				8DE44DD41EAF30E3005B12FC /* LaunchScreen.storyboard in Resources */,
 				8D6EF9481EB32FEA0035C243 /* LTHotCell.xib in Resources */,
 				8DE44E221EB0FD10005B12FC /* LTNearViewController.xib in Resources */,
+				8D1FAE821EB7B8B900846F74 /* LTNearCell.xib in Resources */,
 				8DE44E011EB07F0C005B12FC /* LTMainViewController.xib in Resources */,
 				8DE44E181EB0FCC8005B12FC /* LTFocusViewController.xib in Resources */,
 				8DE44DD11EAF30E3005B12FC /* Assets.xcassets in Resources */,
@@ -654,6 +663,7 @@
 				8DE44E051EB07F4C005B12FC /* LTMineViewController.m in Sources */,
 				8D1FAE701EB77E5800846F74 /* LTLocationManager.m in Sources */,
 				8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */,
+				8D1FAE811EB7B8B900846F74 /* LTNearCell.m in Sources */,
 				8D1DF1771EB2278F00366B38 /* UIImageView+SDWebImage.m in Sources */,
 				8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */,
 				8D1DF17A1EB22DAD00366B38 /* LTBaseHandler.m in Sources */,

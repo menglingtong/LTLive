@@ -37,4 +37,6 @@
 @property (nonatomic, strong) NSString * token;
 @property (nonatomic, assign) NSInteger version;
 
+@property (nonatomic, copy) NSString *distance;
+
 @end
