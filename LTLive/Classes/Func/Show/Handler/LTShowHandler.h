@@ -13,4 +13,7 @@
 // 获取热门直播信息
 + (void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
 
+// 获取附近直播信息
++ (void)executeGetNearLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
+
 @end

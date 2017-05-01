@@ -8,6 +8,8 @@
 
 #import "LTNearViewController.h"
 
+#import "LTShowHandler.h"
+
 @interface LTNearViewController ()
 
 @end
@@ -17,6 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [LTShowHandler executeGetNearLiveTaskWithSuccess:^(id obj) {
+        
+        NSLog(@"%@", obj);
+        
+    } failed:^(id obj) {
+        
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

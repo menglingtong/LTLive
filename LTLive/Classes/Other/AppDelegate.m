@@ -10,6 +10,8 @@
 
 #import "LTTabBarViewController.h"
 
+#import "LTLocationManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -23,6 +25,12 @@
     LTTabBarViewController *mainVC = [[LTTabBarViewController alloc] init];
     
     self.window.rootViewController = mainVC;
+    
+    
+    [[LTLocationManager shareLocationMnager] getLocation:^(NSString *lat, NSString *lon) {
+        
+        NSLog(@"纬度：%@ - 经度：%@", lat, lon);
+    }];
     
     return YES;
 }
