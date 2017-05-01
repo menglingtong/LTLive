@@ -8,6 +8,10 @@
 
 #import "LTBaseViewController.h"
 
+#import "LTLive.h"
+
 @interface LTPlayerCoverViewController : LTBaseViewController
+
+@property (nonatomic, strong) LTLive *live;
 
 @end

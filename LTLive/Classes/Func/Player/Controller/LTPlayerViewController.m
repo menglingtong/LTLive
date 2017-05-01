@@ -9,7 +9,9 @@
 #import "LTPlayerViewController.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
 
-#import "LTPlayerChatViewController.h"
+#import "LTPlayerCoverViewController.h"
+
+#import "AppDelegate.h"
 @interface LTPlayerViewController ()
 
 @property(atomic, retain) id<IJKMediaPlayback> player;
@@ -18,9 +20,21 @@
 
 @property (nonatomic, strong) UIButton *closeBtn;
 
+@property (nonatomic, strong) LTPlayerCoverViewController *playerChatVC;
+
 @end
 
 @implementation LTPlayerViewController
+
+- (LTPlayerCoverViewController *)playerChatVC
+{
+    if (!_playerChatVC) {
+        
+        _playerChatVC = [[LTPlayerCoverViewController alloc] init];
+    }
+    
+    return _playerChatVC;
+}
 
 - (UIButton *)closeBtn
 {
@@ -57,6 +71,10 @@
     
     // 开始播放
     [self.player prepareToPlay];
+    
+    UIWindow *window = [[UIApplication sharedApplication].delegate window];
+    
+    [window addSubview:self.closeBtn];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -67,6 +85,8 @@
     // 关闭直播
     [self.player shutdown];
     [self removeMovieNotificationObservers];
+    
+    [self.closeBtn removeFromSuperview];
 }
 
 #pragma mark Install Movie Notifications
@@ -212,6 +232,23 @@
     
     [self initUI];
     
+    [self addChatVC];
+}
+
+- (void)addChatVC
+{
+    [self addChildViewController:self.playerChatVC];
+    
+    [self.view addSubview:self.playerChatVC.view];
+    
+    [self.playerChatVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.edges.equalTo(self.view);
+        
+    }];
+    
+    self.playerChatVC.live = self.live;
+     
 }
 
 - (void)initUI
@@ -234,7 +271,7 @@
     
     [self.blurImageView addSubview:visualEffect];
     
-    [self.view addSubview:self.closeBtn];
+    
     
 }
 

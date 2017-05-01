@@ -8,15 +8,36 @@
 
 #import "LTPlayerCoverViewController.h"
 
+
+
 @interface LTPlayerCoverViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+
+
 
 @end
 
 @implementation LTPlayerCoverViewController
 
+- (void)setLive:(LTLive *)live
+{
+    if (!_live) {
+        
+        _live = live;
+    }
+    
+    
+    [_headImageView downloadImage:live.creator.portrait placeholder:@"default_room"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.headImageView.layer.cornerRadius = 20;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
