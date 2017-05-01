@@ -22,6 +22,16 @@
     self.navigationBar.tintColor = [UIColor whiteColor];
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    [super pushViewController:viewController animated:animated];
+    
+    if (self.viewControllers.count) {
+        
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

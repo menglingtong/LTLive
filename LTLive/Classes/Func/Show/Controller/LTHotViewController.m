@@ -12,6 +12,9 @@
 
 #import "LTHotCell.h"
 
+#import "LTPlayerViewController.h"
+
+
 static NSString *identifier = @"LTHotCell";
 
 @interface LTHotViewController ()
@@ -44,7 +47,23 @@ static NSString *identifier = @"LTHotCell";
     
     cell.live = [_dataSource objectAtIndex:indexPath.row];
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    LTLive *live = [self.dataSource objectAtIndex:indexPath.row];
+    
+    LTPlayerViewController *playerVC = [[LTPlayerViewController alloc] init];
+    
+    playerVC.live = live;
+    
+    [self.navigationController pushViewController:playerVC animated:YES];
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

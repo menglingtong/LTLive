@@ -11,6 +11,8 @@
 		8D1DF1761EB2278F00366B38 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DF1731EB2278F00366B38 /* HttpTool.m */; };
 		8D1DF1771EB2278F00366B38 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DF1751EB2278F00366B38 /* UIImageView+SDWebImage.m */; };
 		8D1DF17A1EB22DAD00366B38 /* LTBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DF1791EB22DAD00366B38 /* LTBaseHandler.m */; };
+		8D1FAE6C1EB7448C00846F74 /* LTPlayerCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE6A1EB7448C00846F74 /* LTPlayerCoverViewController.m */; };
+		8D1FAE6D1EB7448C00846F74 /* LTPlayerCoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE6B1EB7448C00846F74 /* LTPlayerCoverViewController.xib */; };
 		8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9361EB244E00035C243 /* LTShowHandler.m */; };
 		8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9391EB2F8540035C243 /* LTLive.m */; };
 		8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF93C1EB3056D0035C243 /* LTCreator.m */; };
@@ -18,6 +20,20 @@
 		8D6EF9431EB31EEF0035C243 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9421EB31EEF0035C243 /* MJExtensionConfig.m */; };
 		8D6EF9471EB32FEA0035C243 /* LTHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9451EB32FEA0035C243 /* LTHotCell.m */; };
 		8D6EF9481EB32FEA0035C243 /* LTHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6EF9461EB32FEA0035C243 /* LTHotCell.xib */; };
+		8D6EF94B1EB5DCF70035C243 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF94A1EB5DCF70035C243 /* IJKMediaFramework.framework */; };
+		8D6EF94D1EB5DD940035C243 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF94C1EB5DD940035C243 /* AudioToolbox.framework */; };
+		8D6EF94F1EB5DDAA0035C243 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF94E1EB5DDAA0035C243 /* AVFoundation.framework */; };
+		8D6EF9511EB5DDBF0035C243 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF9501EB5DDBF0035C243 /* CoreGraphics.framework */; };
+		8D6EF9531EB5DDD10035C243 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF9521EB5DDD10035C243 /* CoreMedia.framework */; };
+		8D6EF9551EB5DDEC0035C243 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF9541EB5DDEC0035C243 /* CoreVideo.framework */; };
+		8D6EF9571EB5DE050035C243 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF9561EB5DE050035C243 /* libbz2.tbd */; };
+		8D6EF9591EB5DE110035C243 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF9581EB5DE110035C243 /* libz.tbd */; };
+		8D6EF95B1EB5DE1E0035C243 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF95A1EB5DE1E0035C243 /* MediaPlayer.framework */; };
+		8D6EF95D1EB5DE2C0035C243 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF95C1EB5DE2C0035C243 /* MobileCoreServices.framework */; };
+		8D6EF95F1EB5DE3F0035C243 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF95E1EB5DE3F0035C243 /* OpenGLES.framework */; };
+		8D6EF9611EB5DE4F0035C243 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF9601EB5DE4F0035C243 /* QuartzCore.framework */; };
+		8D6EF9651EB5DE6A0035C243 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6EF9641EB5DE6A0035C243 /* VideoToolbox.framework */; };
+		8D6EF96D1EB5E6930035C243 /* LTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF96C1EB5E6930035C243 /* LTPlayerViewController.m */; };
 		8DE44DC61EAF30E3005B12FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44DC51EAF30E3005B12FC /* main.m */; };
 		8DE44DCF1EAF30E3005B12FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44DCD1EAF30E3005B12FC /* Main.storyboard */; };
 		8DE44DD11EAF30E3005B12FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44DD01EAF30E3005B12FC /* Assets.xcassets */; };
@@ -52,6 +68,9 @@
 		8D1DF1751EB2278F00366B38 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
 		8D1DF1781EB22DAD00366B38 /* LTBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBaseHandler.h; sourceTree = "<group>"; };
 		8D1DF1791EB22DAD00366B38 /* LTBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTBaseHandler.m; sourceTree = "<group>"; };
+		8D1FAE691EB7448C00846F74 /* LTPlayerCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPlayerCoverViewController.h; sourceTree = "<group>"; };
+		8D1FAE6A1EB7448C00846F74 /* LTPlayerCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPlayerCoverViewController.m; sourceTree = "<group>"; };
+		8D1FAE6B1EB7448C00846F74 /* LTPlayerCoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTPlayerCoverViewController.xib; sourceTree = "<group>"; };
 		8D6EF9351EB244E00035C243 /* LTShowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTShowHandler.h; sourceTree = "<group>"; };
 		8D6EF9361EB244E00035C243 /* LTShowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTShowHandler.m; sourceTree = "<group>"; };
 		8D6EF9381EB2F8540035C243 /* LTLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLive.h; sourceTree = "<group>"; };
@@ -65,6 +84,22 @@
 		8D6EF9441EB32FEA0035C243 /* LTHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTHotCell.h; sourceTree = "<group>"; };
 		8D6EF9451EB32FEA0035C243 /* LTHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTHotCell.m; sourceTree = "<group>"; };
 		8D6EF9461EB32FEA0035C243 /* LTHotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTHotCell.xib; sourceTree = "<group>"; };
+		8D6EF94A1EB5DCF70035C243 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		8D6EF94C1EB5DD940035C243 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8D6EF94E1EB5DDAA0035C243 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8D6EF9501EB5DDBF0035C243 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8D6EF9521EB5DDD10035C243 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8D6EF9541EB5DDEC0035C243 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8D6EF9561EB5DE050035C243 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		8D6EF9581EB5DE110035C243 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8D6EF95A1EB5DE1E0035C243 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8D6EF95C1EB5DE2C0035C243 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8D6EF95E1EB5DE3F0035C243 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8D6EF9601EB5DE4F0035C243 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8D6EF9621EB5DE5C0035C243 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8D6EF9641EB5DE6A0035C243 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		8D6EF96B1EB5E6930035C243 /* LTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPlayerViewController.h; sourceTree = "<group>"; };
+		8D6EF96C1EB5E6930035C243 /* LTPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPlayerViewController.m; sourceTree = "<group>"; };
 		8DE44DC11EAF30E3005B12FC /* LTLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE44DC51EAF30E3005B12FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DE44DCE1EAF30E3005B12FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +147,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6EF9651EB5DE6A0035C243 /* VideoToolbox.framework in Frameworks */,
+				8D6EF9611EB5DE4F0035C243 /* QuartzCore.framework in Frameworks */,
+				8D6EF95F1EB5DE3F0035C243 /* OpenGLES.framework in Frameworks */,
+				8D6EF95D1EB5DE2C0035C243 /* MobileCoreServices.framework in Frameworks */,
+				8D6EF95B1EB5DE1E0035C243 /* MediaPlayer.framework in Frameworks */,
+				8D6EF9591EB5DE110035C243 /* libz.tbd in Frameworks */,
+				8D6EF9571EB5DE050035C243 /* libbz2.tbd in Frameworks */,
+				8D6EF9551EB5DDEC0035C243 /* CoreVideo.framework in Frameworks */,
+				8D6EF9531EB5DDD10035C243 /* CoreMedia.framework in Frameworks */,
+				8D6EF9511EB5DDBF0035C243 /* CoreGraphics.framework in Frameworks */,
+				8D6EF94F1EB5DDAA0035C243 /* AVFoundation.framework in Frameworks */,
+				8D6EF94B1EB5DCF70035C243 /* IJKMediaFramework.framework in Frameworks */,
+				8D6EF94D1EB5DD940035C243 /* AudioToolbox.framework in Frameworks */,
 				125359BF405E489EB3F58E1F /* libPods-LTLive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +167,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D6EF9661EB5E6200035C243 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				8D6EF9671EB5E6200035C243 /* Controller */,
+				8D6EF9681EB5E6200035C243 /* Handler */,
+				8D6EF9691EB5E6200035C243 /* Model */,
+				8D6EF96A1EB5E6200035C243 /* View */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		8D6EF9671EB5E6200035C243 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D6EF96B1EB5E6930035C243 /* LTPlayerViewController.h */,
+				8D6EF96C1EB5E6930035C243 /* LTPlayerViewController.m */,
+				8D1FAE691EB7448C00846F74 /* LTPlayerCoverViewController.h */,
+				8D1FAE6A1EB7448C00846F74 /* LTPlayerCoverViewController.m */,
+				8D1FAE6B1EB7448C00846F74 /* LTPlayerCoverViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D6EF9681EB5E6200035C243 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		8D6EF9691EB5E6200035C243 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D6EF96A1EB5E6200035C243 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8DE44DB81EAF30E3005B12FC = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +266,7 @@
 		8DE44DDC1EAF3618005B12FC /* Func */ = {
 			isa = PBXGroup;
 			children = (
+				8D6EF9661EB5E6200035C243 /* Player */,
 				8DE44E0A1EB0B628005B12FC /* Live */,
 				8DE44DF01EB05B57005B12FC /* Mine */,
 				8DE44DF41EB05B57005B12FC /* Show */,
@@ -398,6 +491,20 @@
 		C8DD4F588A72511E5237E832 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D6EF9641EB5DE6A0035C243 /* VideoToolbox.framework */,
+				8D6EF9621EB5DE5C0035C243 /* UIKit.framework */,
+				8D6EF9601EB5DE4F0035C243 /* QuartzCore.framework */,
+				8D6EF95E1EB5DE3F0035C243 /* OpenGLES.framework */,
+				8D6EF95C1EB5DE2C0035C243 /* MobileCoreServices.framework */,
+				8D6EF95A1EB5DE1E0035C243 /* MediaPlayer.framework */,
+				8D6EF9581EB5DE110035C243 /* libz.tbd */,
+				8D6EF9561EB5DE050035C243 /* libbz2.tbd */,
+				8D6EF9541EB5DDEC0035C243 /* CoreVideo.framework */,
+				8D6EF9521EB5DDD10035C243 /* CoreMedia.framework */,
+				8D6EF9501EB5DDBF0035C243 /* CoreGraphics.framework */,
+				8D6EF94E1EB5DDAA0035C243 /* AVFoundation.framework */,
+				8D6EF94C1EB5DD940035C243 /* AudioToolbox.framework */,
+				8D6EF94A1EB5DCF70035C243 /* IJKMediaFramework.framework */,
 				9AF0F2F0799BD79ED9B70B27 /* libPods-LTLive.a */,
 			);
 			name = Frameworks;
@@ -475,6 +582,7 @@
 				8DE44E131EB0B652005B12FC /* LTLaunchViewController.xib in Resources */,
 				8DE44DCF1EAF30E3005B12FC /* Main.storyboard in Resources */,
 				8DE44E061EB07F4C005B12FC /* LTMineViewController.xib in Resources */,
+				8D1FAE6D1EB7448C00846F74 /* LTPlayerCoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +657,7 @@
 				8DE44E251EB1B782005B12FC /* LTMainTopView.m in Sources */,
 				8D6EF9471EB32FEA0035C243 /* LTHotCell.m in Sources */,
 				8DE44DEF1EB05A55005B12FC /* LTTabBar.m in Sources */,
+				8D1FAE6C1EB7448C00846F74 /* LTPlayerCoverViewController.m in Sources */,
 				8DE44DFC1EB07EC4005B12FC /* LTBaseViewController.m in Sources */,
 				8D6EF9401EB307630035C243 /* LTExtra.m in Sources */,
 				8DE44E171EB0FCC8005B12FC /* LTFocusViewController.m in Sources */,
@@ -556,6 +665,7 @@
 				8DE44E1C1EB0FCD3005B12FC /* LTHotViewController.m in Sources */,
 				8DE44E121EB0B652005B12FC /* LTLaunchViewController.m in Sources */,
 				8D1DF1761EB2278F00366B38 /* HttpTool.m in Sources */,
+				8D6EF96D1EB5E6930035C243 /* LTPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +788,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 69M2LTLWFX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LTLive/Classes/Other/Live.pch";
 				INFOPLIST_FILE = LTLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -694,6 +808,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 69M2LTLWFX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LTLive/Classes/Other/Live.pch";
 				INFOPLIST_FILE = LTLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
