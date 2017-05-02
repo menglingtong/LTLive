@@ -29,20 +29,49 @@
                         <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="nVI-wd-y3N"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkG-bl-uFi">
+                    <rect key="frame" x="10" y="20" width="72" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="北京市" image="launch_map_on"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fb-bD-NF3">
+                    <rect key="frame" x="62.5" y="311.5" width="250" height="44"/>
+                    <state key="normal" title="开始直播吧" backgroundImage="room_button">
+                        <color key="titleColor" red="0.74616957900000003" green="1" blue="0.64516533499999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入直播标题吧😝" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-7r-c4J">
+                    <rect key="frame" x="87.5" y="251.5" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Tjx-dP-dvU"/>
+                        <constraint firstAttribute="width" constant="200" id="rMN-Bu-fhy"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="DHF-O7-JCE" secondAttribute="trailing" id="0rI-fD-6Nb"/>
                 <constraint firstItem="DHF-O7-JCE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3cd-ph-mvC"/>
+                <constraint firstItem="2Fb-bD-NF3" firstAttribute="top" secondItem="4Mi-7r-c4J" secondAttribute="bottom" constant="30" id="7ix-LU-C0n"/>
                 <constraint firstAttribute="bottom" secondItem="fZK-4n-BOn" secondAttribute="bottom" id="9up-Hx-uEq"/>
+                <constraint firstItem="2Fb-bD-NF3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Bpx-AQ-CyC"/>
+                <constraint firstItem="2Fb-bD-NF3" firstAttribute="centerX" secondItem="4Mi-7r-c4J" secondAttribute="centerX" id="Kpm-a7-zmJ"/>
                 <constraint firstItem="fZK-4n-BOn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a0f-gr-Bdo"/>
+                <constraint firstItem="XkG-bl-uFi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="bRS-Dk-VW2"/>
                 <constraint firstAttribute="trailing" secondItem="fZK-4n-BOn" secondAttribute="trailing" id="euv-pG-O4t"/>
                 <constraint firstItem="fZK-4n-BOn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oAe-PU-pdU"/>
+                <constraint firstItem="2Fb-bD-NF3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ss0-P3-HsK"/>
+                <constraint firstItem="XkG-bl-uFi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="x24-0S-FAy"/>
             </constraints>
         </view>
     </objects>
     <resources>
         <image name="bg_zbfx" width="16" height="16"/>
         <image name="launch_close" width="64" height="64"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
     </resources>
 </document>
