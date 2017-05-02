@@ -17,4 +17,6 @@ pod 'YYKit', '~> 1.0.9'
 
 pod 'MJExtension', '~> 3.0.13'
 
+pod 'LFLiveKit'
+
 end
