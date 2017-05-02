@@ -8,6 +8,8 @@
 
 #import "LTLaunchViewController.h"
 
+#import "LFLivePreview.h"
+
 @interface LTLaunchViewController ()
 
 
@@ -24,6 +26,14 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)startLive:(id)sender {
+    
+    LFLivePreview *preView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+    
+    [self.view addSubview:preView];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

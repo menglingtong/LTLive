@@ -39,6 +39,9 @@
                     <state key="normal" title="开始直播吧" backgroundImage="room_button">
                         <color key="titleColor" red="0.74616957900000003" green="1" blue="0.64516533499999995" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="startLive:" destination="-1" eventType="touchUpInside" id="yYm-UA-TE0"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入直播标题吧😝" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-7r-c4J">
                     <rect key="frame" x="87.5" y="251.5" width="200" height="30"/>
