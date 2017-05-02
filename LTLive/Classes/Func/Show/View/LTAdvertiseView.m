@@ -14,11 +14,15 @@
 
 #import "LTCatch.h"
 
+static NSUInteger showtime = 3;
+
 @interface LTAdvertiseView ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *backImage;
 
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+
+@property (nonatomic, strong) dispatch_source_t timer;
 
 @end
 
@@ -167,6 +171,50 @@
 
 - (void)startTimer
 {
+    __block NSUInteger timeout = showtime + 1;
+    
+    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+    dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_event_handler(_timer, ^{
+        
+        
+        if (timeout <= 0) {
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                [self dismiss];
+            });
+            
+        }
+        else
+        {
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                self.timeLabel.text = [NSString stringWithFormat:@"跳过%zd", timeout];
+            });
+            
+            timeout--;
+            
+        }
+        
+    });
+    dispatch_resume(_timer);
+    
+}
+
+- (void)dismiss
+{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.alpha = 0.f;
+        
+    } completion:^(BOOL finished) {
+        
+        [self removeFromSuperview];
+    }];
     
 }
 
