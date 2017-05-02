@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LTAdvertiseView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-gc-xmD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrK-gd-7pS">
+                    <rect key="frame" x="310" y="40" width="45" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="89V-Q1-uVY"/>
+                        <constraint firstAttribute="height" constant="20" id="NOp-sM-0OE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="d7f-gc-xmD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8WM-d7-KWZ"/>
+                <constraint firstItem="d7f-gc-xmD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pac-qy-W0h"/>
+                <constraint firstAttribute="trailing" secondItem="d7f-gc-xmD" secondAttribute="trailing" id="Uao-dJ-TOU"/>
+                <constraint firstAttribute="bottom" secondItem="d7f-gc-xmD" secondAttribute="bottom" id="hhC-pY-ZYS"/>
+                <constraint firstItem="MrK-gd-7pS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="vee-tr-Zhd"/>
+                <constraint firstAttribute="trailing" secondItem="MrK-gd-7pS" secondAttribute="trailing" constant="20" id="w44-pE-0ot"/>
+            </constraints>
+            <connections>
+                <outlet property="backImage" destination="d7f-gc-xmD" id="dLp-kd-RpU"/>
+                <outlet property="timeLabel" destination="MrK-gd-7pS" id="XcQ-To-JxX"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -39,4 +39,6 @@
 
 @property (nonatomic, copy) NSString *distance;
 
+@property (nonatomic, getter=isShow, assign) BOOL *show;
+
 @end

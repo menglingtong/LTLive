@@ -17,6 +17,9 @@
 		8D1FAE721EB7984800846F74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1FAE711EB7984800846F74 /* CoreLocation.framework */; };
 		8D1FAE811EB7B8B900846F74 /* LTNearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE7F1EB7B8B900846F74 /* LTNearCell.m */; };
 		8D1FAE821EB7B8B900846F74 /* LTNearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE801EB7B8B900846F74 /* LTNearCell.xib */; };
+		8D1FAE851EB83A3100846F74 /* LTAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE841EB83A3100846F74 /* LTAdvertise.m */; };
+		8D1FAE881EB842E000846F74 /* LTAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE871EB842E000846F74 /* LTAdvertiseView.m */; };
+		8D1FAE8A1EB8430800846F74 /* LTAdvertiseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE891EB8430800846F74 /* LTAdvertiseView.xib */; };
 		8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9361EB244E00035C243 /* LTShowHandler.m */; };
 		8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9391EB2F8540035C243 /* LTLive.m */; };
 		8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF93C1EB3056D0035C243 /* LTCreator.m */; };
@@ -81,6 +84,11 @@
 		8D1FAE7E1EB7B8B900846F74 /* LTNearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNearCell.h; sourceTree = "<group>"; };
 		8D1FAE7F1EB7B8B900846F74 /* LTNearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNearCell.m; sourceTree = "<group>"; };
 		8D1FAE801EB7B8B900846F74 /* LTNearCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTNearCell.xib; sourceTree = "<group>"; };
+		8D1FAE831EB83A3100846F74 /* LTAdvertise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAdvertise.h; sourceTree = "<group>"; };
+		8D1FAE841EB83A3100846F74 /* LTAdvertise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAdvertise.m; sourceTree = "<group>"; };
+		8D1FAE861EB842E000846F74 /* LTAdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAdvertiseView.h; sourceTree = "<group>"; };
+		8D1FAE871EB842E000846F74 /* LTAdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAdvertiseView.m; sourceTree = "<group>"; };
+		8D1FAE891EB8430800846F74 /* LTAdvertiseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTAdvertiseView.xib; sourceTree = "<group>"; };
 		8D6EF9351EB244E00035C243 /* LTShowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTShowHandler.h; sourceTree = "<group>"; };
 		8D6EF9361EB244E00035C243 /* LTShowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTShowHandler.m; sourceTree = "<group>"; };
 		8D6EF9381EB2F8540035C243 /* LTLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLive.h; sourceTree = "<group>"; };
@@ -418,6 +426,8 @@
 				8D6EF93C1EB3056D0035C243 /* LTCreator.m */,
 				8D6EF93E1EB307630035C243 /* LTExtra.h */,
 				8D6EF93F1EB307630035C243 /* LTExtra.m */,
+				8D1FAE831EB83A3100846F74 /* LTAdvertise.h */,
+				8D1FAE841EB83A3100846F74 /* LTAdvertise.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -433,6 +443,9 @@
 				8D1FAE7E1EB7B8B900846F74 /* LTNearCell.h */,
 				8D1FAE7F1EB7B8B900846F74 /* LTNearCell.m */,
 				8D1FAE801EB7B8B900846F74 /* LTNearCell.xib */,
+				8D1FAE861EB842E000846F74 /* LTAdvertiseView.h */,
+				8D1FAE871EB842E000846F74 /* LTAdvertiseView.m */,
+				8D1FAE891EB8430800846F74 /* LTAdvertiseView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -592,6 +605,7 @@
 			files = (
 				8DE44DD41EAF30E3005B12FC /* LaunchScreen.storyboard in Resources */,
 				8D6EF9481EB32FEA0035C243 /* LTHotCell.xib in Resources */,
+				8D1FAE8A1EB8430800846F74 /* LTAdvertiseView.xib in Resources */,
 				8DE44E221EB0FD10005B12FC /* LTNearViewController.xib in Resources */,
 				8D1FAE821EB7B8B900846F74 /* LTNearCell.xib in Resources */,
 				8DE44E011EB07F0C005B12FC /* LTMainViewController.xib in Resources */,
@@ -666,10 +680,12 @@
 				8D1FAE811EB7B8B900846F74 /* LTNearCell.m in Sources */,
 				8D1DF1771EB2278F00366B38 /* UIImageView+SDWebImage.m in Sources */,
 				8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */,
+				8D1FAE851EB83A3100846F74 /* LTAdvertise.m in Sources */,
 				8D1DF17A1EB22DAD00366B38 /* LTBaseHandler.m in Sources */,
 				8D6EF9431EB31EEF0035C243 /* MJExtensionConfig.m in Sources */,
 				8DE44E211EB0FD10005B12FC /* LTNearViewController.m in Sources */,
 				8DE44DE31EAF3618005B12FC /* AppDelegate.m in Sources */,
+				8D1FAE881EB842E000846F74 /* LTAdvertiseView.m in Sources */,
 				8DE44DEC1EB05A35005B12FC /* LTTabBarViewController.m in Sources */,
 				8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */,
 				8DE44E001EB07F0C005B12FC /* LTMainViewController.m in Sources */,

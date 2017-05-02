@@ -13,6 +13,8 @@
 
 #import "LTLive.h"
 
+#import "LTAdvertise.h"
+
 @implementation LTShowHandler
 
 +(void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed
@@ -64,6 +66,32 @@
     }];
     
 }
+
++ (void)executeGetAdvertiseTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed
+{
+    
+    [HttpTool getWithPath:API_Advertise params:nil success:^(id json) {
+        
+        if ([json[@"dm_error"] integerValue]) {
+            
+            failed(json[@"error_msg"]);
+        }
+        else
+        {
+            
+            LTAdvertise *advertise = [LTAdvertise mj_objectWithKeyValues:json[@"resources"][0]];
+            
+            success(advertise);
+        }
+        
+    } failure:^(NSError *error) {
+        
+        failed(error);
+    }];
+
+    
+}
+
 
 
 @end

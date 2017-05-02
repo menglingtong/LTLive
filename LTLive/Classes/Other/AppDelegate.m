@@ -12,6 +12,8 @@
 
 #import "LTLocationManager.h"
 
+#import "LTAdvertiseView.h"
+
 @interface AppDelegate ()
 
 @end
@@ -31,6 +33,10 @@
         
         NSLog(@"纬度：%@ - 经度：%@", lat, lon);
     }];
+    
+    LTAdvertiseView *advertise = [LTAdvertiseView loadAdvertiseView];
+    
+    [self.window addSubview:advertise];
     
     return YES;
 }

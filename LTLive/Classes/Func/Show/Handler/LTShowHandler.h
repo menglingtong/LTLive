@@ -16,4 +16,7 @@
 // 获取附近直播信息
 + (void)executeGetNearLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
 
+// 获取广告页
++ (void)executeGetAdvertiseTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
+
 @end

@@ -12,9 +12,14 @@
 
 #import "LTNearCell.h"
 
+#import "LTPlayerViewController.h"
+
 static NSString *identifier = @"LTNearCell";
 
-@interface LTNearViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+#define kMargin 5
+#define kItemWidth 100
+
+@interface LTNearViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *mainCollectionView;
 
@@ -79,6 +84,35 @@ static NSString *identifier = @"LTNearCell";
     cell.live = self.dataSource[indexPath.item];
     
     return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger count = self.mainCollectionView.width / kItemWidth;
+    
+    CGFloat extraWidth = (self.mainCollectionView.width - kMargin * (count + 1)) / count;
+    
+    return CGSizeMake(extraWidth, extraWidth + 20);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    LTNearCell *c = (LTNearCell *)cell;
+    
+    [c showAnimation];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    
+    LTLive *live = [self.dataSource objectAtIndex:indexPath.row];
+    
+    LTPlayerViewController *playerVC = [[LTPlayerViewController alloc] init];
+    
+    playerVC.live = live;
+    
+    [self.navigationController pushViewController:playerVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
