@@ -22,6 +22,8 @@
 
 #import <MJExtension.h>
 
+#import <SDWebImageManager.h>
+
 #import "UIImageView+SDWebImage.h"
 
 #endif /* LTLive_pch */

@@ -20,6 +20,7 @@
 		8D1FAE851EB83A3100846F74 /* LTAdvertise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE841EB83A3100846F74 /* LTAdvertise.m */; };
 		8D1FAE881EB842E000846F74 /* LTAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE871EB842E000846F74 /* LTAdvertiseView.m */; };
 		8D1FAE8A1EB8430800846F74 /* LTAdvertiseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE891EB8430800846F74 /* LTAdvertiseView.xib */; };
+		8D1FAE8D1EB8653E00846F74 /* LTCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAE8C1EB8653E00846F74 /* LTCatch.m */; };
 		8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9361EB244E00035C243 /* LTShowHandler.m */; };
 		8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9391EB2F8540035C243 /* LTLive.m */; };
 		8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF93C1EB3056D0035C243 /* LTCreator.m */; };
@@ -89,6 +90,8 @@
 		8D1FAE861EB842E000846F74 /* LTAdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAdvertiseView.h; sourceTree = "<group>"; };
 		8D1FAE871EB842E000846F74 /* LTAdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAdvertiseView.m; sourceTree = "<group>"; };
 		8D1FAE891EB8430800846F74 /* LTAdvertiseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTAdvertiseView.xib; sourceTree = "<group>"; };
+		8D1FAE8B1EB8653E00846F74 /* LTCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCatch.h; sourceTree = "<group>"; };
+		8D1FAE8C1EB8653E00846F74 /* LTCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCatch.m; sourceTree = "<group>"; };
 		8D6EF9351EB244E00035C243 /* LTShowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTShowHandler.h; sourceTree = "<group>"; };
 		8D6EF9361EB244E00035C243 /* LTShowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTShowHandler.m; sourceTree = "<group>"; };
 		8D6EF9381EB2F8540035C243 /* LTLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLive.h; sourceTree = "<group>"; };
@@ -332,6 +335,8 @@
 			children = (
 				8D1FAE6E1EB77E5800846F74 /* LTLocationManager.h */,
 				8D1FAE6F1EB77E5800846F74 /* LTLocationManager.m */,
+				8D1FAE8B1EB8653E00846F74 /* LTCatch.h */,
+				8D1FAE8C1EB8653E00846F74 /* LTCatch.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -700,6 +705,7 @@
 				8DE44E091EB081FE005B12FC /* LTBaseNavViewController.m in Sources */,
 				8DE44E1C1EB0FCD3005B12FC /* LTHotViewController.m in Sources */,
 				8DE44E121EB0B652005B12FC /* LTLaunchViewController.m in Sources */,
+				8D1FAE8D1EB8653E00846F74 /* LTCatch.m in Sources */,
 				8D1DF1761EB2278F00366B38 /* HttpTool.m in Sources */,
 				8D6EF96D1EB5E6930035C243 /* LTPlayerViewController.m in Sources */,
 			);

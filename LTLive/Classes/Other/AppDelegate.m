@@ -28,6 +28,8 @@
     
     self.window.rootViewController = mainVC;
     
+    [self.window makeKeyAndVisible];
+    
     
     [[LTLocationManager shareLocationMnager] getLocation:^(NSString *lat, NSString *lon) {
         
