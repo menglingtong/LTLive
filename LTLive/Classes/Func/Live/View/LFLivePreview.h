@@ -10,4 +10,10 @@
 
 @interface LFLivePreview : UIView
 
+- (void)startLive;
+
+- (void)stopLive;
+
+@property (nonatomic, strong) UIViewController *vc;
+
 @end

@@ -31,9 +31,19 @@
         _live = live;
     }
     
-    [self.headView downloadImage:live.creator.portrait placeholder:@"default_room"];
+    if ([_live.creator.portrait isEqualToString:@"MLT"]) {
+        
+        self.headView.image = [UIImage imageNamed:@"MLT.jpg"];
+        self.bigImageView.image = [UIImage imageNamed:@"MLT.jpg"];
+        
+    }else
+    {
+        [self.headView downloadImage:live.creator.portrait placeholder:@"default_room"];
+        
+        [self.bigImageView downloadImage:live.creator.portrait placeholder:@"default_room"];
+    }
     
-    [self.bigImageView downloadImage:live.creator.portrait placeholder:@"default_room"];
+    
     
     self.nameLabel.text = live.creator.nick;
     

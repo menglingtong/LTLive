@@ -31,5 +31,8 @@
 //欢哥直播地址
 #define Live_Dahuan @"rtmp://live.hkstv.hk.lxdns.com:1935/live/dahuan"
 
+// 我的直播地址
+#define Live_MLT @"rtmp://live.hkstv.hk.lxdns.com:1935/live/lrymlt"
+
 
 @end

@@ -35,7 +35,6 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
 @property (nonatomic, strong) UIButton *beautyButton;
 @property (nonatomic, strong) UIButton *cameraButton;
 @property (nonatomic, strong) UIButton *closeButton;
-@property (nonatomic, strong) UIButton *startLiveButton;
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, strong) LFLiveDebug *debugInfo;
 @property (nonatomic, strong) LFLiveSession *session;
@@ -55,7 +54,6 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
         [self.containerView addSubview:self.closeButton];
         [self.containerView addSubview:self.cameraButton];
         [self.containerView addSubview:self.beautyButton];
-        [self.containerView addSubview:self.startLiveButton];
     }
     return self;
 }
@@ -303,8 +301,13 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
         _closeButton.top = 20;
         [_closeButton setImage:[UIImage imageNamed:@"close_preview"] forState:UIControlStateNormal];
         _closeButton.exclusiveTouch = YES;
+        __weak typeof(self) _self = self;
         [_closeButton addBlockForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
-
+            
+            [_self stopLive];
+            
+            [_self.vc dismissViewControllerAnimated:YES completion:nil];
+            
         }];
     }
     return _closeButton;
@@ -343,33 +346,19 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
     return _beautyButton;
 }
 
-- (UIButton *)startLiveButton {
-    if (!_startLiveButton) {
-        _startLiveButton = [UIButton new];
-        _startLiveButton.size = CGSizeMake(self.width - 60, 44);
-        _startLiveButton.left = 30;
-        _startLiveButton.bottom = self.height - 50;
-        _startLiveButton.layer.cornerRadius = _startLiveButton.height/2;
-        [_startLiveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_startLiveButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
-        [_startLiveButton setTitle:@"开始直播" forState:UIControlStateNormal];
-        [_startLiveButton setBackgroundColor:[UIColor colorWithRed:50 green:32 blue:245 alpha:1]];
-        _startLiveButton.exclusiveTouch = YES;
-        __weak typeof(self) _self = self;
-        [_startLiveButton addBlockForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
-            _self.startLiveButton.selected = !_self.startLiveButton.selected;
-            if (_self.startLiveButton.selected) {
-                [_self.startLiveButton setTitle:@"结束直播" forState:UIControlStateNormal];
-                LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-                stream.url = @"rtmp://live.hkstv.hk.lxdns.com:1935/live/stream153";
-                [_self.session startLive:stream];
-            } else {
-                [_self.startLiveButton setTitle:@"开始直播" forState:UIControlStateNormal];
-                [_self.session stopLive];
-            }
-        }];
-    }
-    return _startLiveButton;
+
+
+- (void)startLive
+{
+    LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
+    stream.url = @"rtmp://live.hkstv.hk.lxdns.com:1935/live/lrymlt";
+    [self.session startLive:stream];
+}
+
+- (void)stopLive
+{
+
+    [self.session stopLive];
 }
 
 @end

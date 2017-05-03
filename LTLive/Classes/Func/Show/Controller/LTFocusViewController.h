@@ -8,6 +8,6 @@
 
 #import "LTBaseViewController.h"
 
-@interface LTFocusViewController : LTBaseViewController
+@interface LTFocusViewController : UITableViewController
 
 @end

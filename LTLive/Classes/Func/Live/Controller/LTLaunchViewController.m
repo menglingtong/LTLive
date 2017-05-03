@@ -31,6 +31,9 @@
     
     LFLivePreview *preView = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
     
+    preView.vc = self;
+    
+    [preView startLive];
     [self.view addSubview:preView];
 }
 
