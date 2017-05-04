@@ -48,6 +48,7 @@
     /* 设置新浪的appKey和appSecret */
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:kWeiboKey  appSecret:kWeiboSecret redirectURL:@"https://sns.whalecloud.com/sina2/callback"];
     
+    // https://api.weibo.com/oauth2/default.html
     
 }
 
@@ -69,5 +70,7 @@
     //[UMSocialGlobal shareInstance].isUsingHttpsWhenShareContent = NO;
     
 }
+
+
 
 @end

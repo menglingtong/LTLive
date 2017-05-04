@@ -8,7 +8,11 @@
 
 #import "LTLoginViewController.h"
 
+// 在需要进行获取登录信息的UIViewController中加入如下代码
+#import <UMSocialCore/UMSocialCore.h>
+
 @interface LTLoginViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *weiboLogin;
 
 @end
 
@@ -17,6 +21,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+- (IBAction)weiboLoginFun:(id)sender {
+    
+    [[UMSocialManager defaultManager] getUserInfoWithPlatform:UMSocialPlatformType_Sina currentViewController:nil completion:^(id result, NSError *error) {
+        if (error) {
+            
+        } else {
+            UMSocialUserInfoResponse *resp = result;
+            
+            // 授权信息
+            NSLog(@"Sina uid: %@", resp.uid);
+            NSLog(@"Sina accessToken: %@", resp.accessToken);
+            NSLog(@"Sina refreshToken: %@", resp.refreshToken);
+            NSLog(@"Sina expiration: %@", resp.expiration);
+            
+            // 用户信息
+            NSLog(@"Sina name: %@", resp.name);
+            NSLog(@"Sina iconurl: %@", resp.iconurl);
+            NSLog(@"Sina gender: %@", resp.gender);
+            
+            // 第三方平台SDK源数据
+            NSLog(@"Sina originalResponse: %@", resp.originalResponse);
+        }
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,6 +16,10 @@
 
 #import "AppDelegate+LTUMeng.h"
 
+#import <UMSocialCore/UMSocialCore.h>
+
+#import "LTLoginViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -29,7 +33,9 @@
     // 设置友盟控件
     [self setupUMeng];
     
-    LTTabBarViewController *mainVC = [[LTTabBarViewController alloc] init];
+//    LTTabBarViewController *mainVC = [[LTTabBarViewController alloc] init];
+    
+    LTLoginViewController *mainVC = [[LTLoginViewController alloc] init];
     
     self.window.rootViewController = mainVC;
     
@@ -75,6 +81,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+// 支持所有iOS系统
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    //6.3的新的API调用，是为了兼容国外平台(例如:新版facebookSDK,VK等)的调用[如果用6.2的api调用会没有回调],对国内平台没有影响
+    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
+    if (!result) {
+        // 其他如支付等SDK的回调
+    }
+    return result;
+}
+
 
 
 @end
