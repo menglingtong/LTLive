@@ -75,6 +75,16 @@
 		8DE44E251EB1B782005B12FC /* LTMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44E241EB1B782005B12FC /* LTMainTopView.m */; };
 		8DF823281EB9C91100235E3C /* LTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF823261EB9C91100235E3C /* LTLoginViewController.m */; };
 		8DF823291EB9C91100235E3C /* LTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF823271EB9C91100235E3C /* LTLoginViewController.xib */; };
+		8DF8233F1EB9E2B600235E3C /* AppDelegate+LTUMeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8233E1EB9E2B600235E3C /* AppDelegate+LTUMeng.m */; };
+		8DF823541EB9FB3100235E3C /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF823431EB9FB3100235E3C /* libSocialQQ.a */; };
+		8DF823551EB9FB3100235E3C /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF823461EB9FB3100235E3C /* libSocialSina.a */; };
+		8DF823561EB9FB3100235E3C /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF823491EB9FB3100235E3C /* libSocialWeChat.a */; };
+		8DF823571EB9FB3100235E3C /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF8234C1EB9FB3100235E3C /* UMSocialCore.framework */; };
+		8DF823581EB9FB3100235E3C /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF8234D1EB9FB3100235E3C /* UMSocialNetwork.framework */; };
+		8DF823591EB9FB3100235E3C /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8DF8234E1EB9FB3100235E3C /* UMSocialSDKPromptResources.bundle */; };
+		8DF8235A1EB9FB3100235E3C /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF823501EB9FB3100235E3C /* libUMSocialLog.a */; };
+		8DF8235B1EB9FB3100235E3C /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8DF823521EB9FB3100235E3C /* UMSocialSDKResources.bundle */; };
+		8DF8235C1EB9FB3100235E3C /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF823531EB9FB3100235E3C /* UShareUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +194,20 @@
 		8DF823251EB9C91100235E3C /* LTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLoginViewController.h; sourceTree = "<group>"; };
 		8DF823261EB9C91100235E3C /* LTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLoginViewController.m; sourceTree = "<group>"; };
 		8DF823271EB9C91100235E3C /* LTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTLoginViewController.xib; sourceTree = "<group>"; };
+		8DF8233D1EB9E2B600235E3C /* AppDelegate+LTUMeng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LTUMeng.h"; sourceTree = "<group>"; };
+		8DF8233E1EB9E2B600235E3C /* AppDelegate+LTUMeng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LTUMeng.m"; sourceTree = "<group>"; };
+		8DF823431EB9FB3100235E3C /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		8DF823441EB9FB3100235E3C /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		8DF823461EB9FB3100235E3C /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
+		8DF823471EB9FB3100235E3C /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		8DF823491EB9FB3100235E3C /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		8DF8234A1EB9FB3100235E3C /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		8DF8234C1EB9FB3100235E3C /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
+		8DF8234D1EB9FB3100235E3C /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
+		8DF8234E1EB9FB3100235E3C /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
+		8DF823501EB9FB3100235E3C /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
+		8DF823521EB9FB3100235E3C /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		8DF823531EB9FB3100235E3C /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
 		9AF0F2F0799BD79ED9B70B27 /* libPods-LTLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LTLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -192,20 +216,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF823541EB9FB3100235E3C /* libSocialQQ.a in Frameworks */,
 				8D1FAE721EB7984800846F74 /* CoreLocation.framework in Frameworks */,
 				8D6EF9651EB5DE6A0035C243 /* VideoToolbox.framework in Frameworks */,
+				8DF823571EB9FB3100235E3C /* UMSocialCore.framework in Frameworks */,
 				8D6EF9611EB5DE4F0035C243 /* QuartzCore.framework in Frameworks */,
 				8D6EF95F1EB5DE3F0035C243 /* OpenGLES.framework in Frameworks */,
 				8D6EF95D1EB5DE2C0035C243 /* MobileCoreServices.framework in Frameworks */,
 				8D6EF95B1EB5DE1E0035C243 /* MediaPlayer.framework in Frameworks */,
+				8DF823551EB9FB3100235E3C /* libSocialSina.a in Frameworks */,
 				8D6EF9591EB5DE110035C243 /* libz.tbd in Frameworks */,
 				8D6EF9571EB5DE050035C243 /* libbz2.tbd in Frameworks */,
 				8D6EF9551EB5DDEC0035C243 /* CoreVideo.framework in Frameworks */,
+				8DF823581EB9FB3100235E3C /* UMSocialNetwork.framework in Frameworks */,
 				8D6EF9531EB5DDD10035C243 /* CoreMedia.framework in Frameworks */,
+				8DF8235C1EB9FB3100235E3C /* UShareUI.framework in Frameworks */,
 				8D6EF9511EB5DDBF0035C243 /* CoreGraphics.framework in Frameworks */,
 				8D6EF94F1EB5DDAA0035C243 /* AVFoundation.framework in Frameworks */,
 				8D6EF94B1EB5DCF70035C243 /* IJKMediaFramework.framework in Frameworks */,
 				8D6EF94D1EB5DD940035C243 /* AudioToolbox.framework in Frameworks */,
+				8DF8235A1EB9FB3100235E3C /* libUMSocialLog.a in Frameworks */,
+				8DF823561EB9FB3100235E3C /* libSocialWeChat.a in Frameworks */,
 				125359BF405E489EB3F58E1F /* libPods-LTLive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +370,7 @@
 		8DE44DDD1EAF3618005B12FC /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				8DF823401EB9FB3100235E3C /* UMSocial */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -360,6 +392,8 @@
 			children = (
 				8DE44DE01EAF3618005B12FC /* AppDelegate.h */,
 				8DE44DE11EAF3618005B12FC /* AppDelegate.m */,
+				8DF8233D1EB9E2B600235E3C /* AppDelegate+LTUMeng.h */,
+				8DF8233E1EB9E2B600235E3C /* AppDelegate+LTUMeng.m */,
 				8DE44DE51EAF4DD5005B12FC /* ViewController.h */,
 				8DE44DE61EAF4DD5005B12FC /* ViewController.m */,
 				8DE44DE41EAF4791005B12FC /* Live.pch */,
@@ -558,6 +592,81 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8DF823401EB9FB3100235E3C /* UMSocial */ = {
+			isa = PBXGroup;
+			children = (
+				8DF823411EB9FB3100235E3C /* SocialLibraries */,
+				8DF8234B1EB9FB3100235E3C /* UMSocialSDK */,
+				8DF8234F1EB9FB3100235E3C /* UMSocialSDKPlugin */,
+				8DF823511EB9FB3100235E3C /* UMSocialUI */,
+			);
+			path = UMSocial;
+			sourceTree = "<group>";
+		};
+		8DF823411EB9FB3100235E3C /* SocialLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8DF823421EB9FB3100235E3C /* QQ */,
+				8DF823451EB9FB3100235E3C /* Sina */,
+				8DF823481EB9FB3100235E3C /* WeChat */,
+			);
+			path = SocialLibraries;
+			sourceTree = "<group>";
+		};
+		8DF823421EB9FB3100235E3C /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				8DF823431EB9FB3100235E3C /* libSocialQQ.a */,
+				8DF823441EB9FB3100235E3C /* UMSocialQQHandler.h */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		8DF823451EB9FB3100235E3C /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				8DF823461EB9FB3100235E3C /* libSocialSina.a */,
+				8DF823471EB9FB3100235E3C /* UMSocialSinaHandler.h */,
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		8DF823481EB9FB3100235E3C /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				8DF823491EB9FB3100235E3C /* libSocialWeChat.a */,
+				8DF8234A1EB9FB3100235E3C /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		8DF8234B1EB9FB3100235E3C /* UMSocialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8DF8234C1EB9FB3100235E3C /* UMSocialCore.framework */,
+				8DF8234D1EB9FB3100235E3C /* UMSocialNetwork.framework */,
+				8DF8234E1EB9FB3100235E3C /* UMSocialSDKPromptResources.bundle */,
+			);
+			path = UMSocialSDK;
+			sourceTree = "<group>";
+		};
+		8DF8234F1EB9FB3100235E3C /* UMSocialSDKPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				8DF823501EB9FB3100235E3C /* libUMSocialLog.a */,
+			);
+			path = UMSocialSDKPlugin;
+			sourceTree = "<group>";
+		};
+		8DF823511EB9FB3100235E3C /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				8DF823521EB9FB3100235E3C /* UMSocialSDKResources.bundle */,
+				8DF823531EB9FB3100235E3C /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
 		C889B4D14B9C5B3AD73CE639 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,7 +777,9 @@
 				8DE44DD11EAF30E3005B12FC /* Assets.xcassets in Resources */,
 				8DE44E131EB0B652005B12FC /* LTLaunchViewController.xib in Resources */,
 				8D1FAE9F1EB8D1A800846F74 /* camra_preview@3x.png in Resources */,
+				8DF823591EB9FB3100235E3C /* UMSocialSDKPromptResources.bundle in Resources */,
 				8D1FAE9A1EB8D1A800846F74 /* camra_beauty@2x.png in Resources */,
+				8DF8235B1EB9FB3100235E3C /* UMSocialSDKResources.bundle in Resources */,
 				8DE44DCF1EAF30E3005B12FC /* Main.storyboard in Resources */,
 				8DE44E061EB07F4C005B12FC /* LTMineViewController.xib in Resources */,
 				8D1FAE6D1EB7448C00846F74 /* LTPlayerCoverViewController.xib in Resources */,
@@ -736,6 +847,7 @@
 				8DE44E051EB07F4C005B12FC /* LTMineViewController.m in Sources */,
 				8D1FAE701EB77E5800846F74 /* LTLocationManager.m in Sources */,
 				8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */,
+				8DF8233F1EB9E2B600235E3C /* AppDelegate+LTUMeng.m in Sources */,
 				8D1FAE811EB7B8B900846F74 /* LTNearCell.m in Sources */,
 				8D1DF1771EB2278F00366B38 /* UIImageView+SDWebImage.m in Sources */,
 				8D1FAEA61EB8D2B700846F74 /* LFLivePreview.m in Sources */,
@@ -889,11 +1001,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/UMSocialUI",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LTLive/Classes/Other/Live.pch";
 				INFOPLIST_FILE = LTLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/UMSocialSDKPlugin",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lrymlt.LTLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -909,11 +1030,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/UMSocialUI",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LTLive/Classes/Other/Live.pch";
 				INFOPLIST_FILE = LTLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/LTLive/Classes/Lib/UMSocial/UMSocialSDKPlugin",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lrymlt.LTLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

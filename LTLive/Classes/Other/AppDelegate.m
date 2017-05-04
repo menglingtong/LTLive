@@ -14,6 +14,8 @@
 
 #import "LTAdvertiseView.h"
 
+#import "AppDelegate+LTUMeng.h"
+
 @interface AppDelegate ()
 
 @end
@@ -23,6 +25,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 设置友盟控件
+    [self setupUMeng];
     
     LTTabBarViewController *mainVC = [[LTTabBarViewController alloc] init];
     
@@ -39,6 +44,7 @@
     LTAdvertiseView *advertise = [LTAdvertiseView loadAdvertiseView];
     
     [self.window addSubview:advertise];
+    
     
     return YES;
 }
