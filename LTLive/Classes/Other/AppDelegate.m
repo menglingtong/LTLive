@@ -20,6 +20,8 @@
 
 #import "LTLoginViewController.h"
 
+#import "LTUserHelper.h"
+
 @interface AppDelegate ()
 
 @end
@@ -33,9 +35,18 @@
     // 设置友盟控件
     [self setupUMeng];
     
-//    LTTabBarViewController *mainVC = [[LTTabBarViewController alloc] init];
+    UIViewController *mainVC;
     
-    LTLoginViewController *mainVC = [[LTLoginViewController alloc] init];
+    if ([LTUserHelper isAutoLogin]) {
+        
+        mainVC = [[LTTabBarViewController alloc] init];
+    }
+    else
+    {
+        
+        mainVC = [[LTLoginViewController alloc] init];
+    }
+    
     
     self.window.rootViewController = mainVC;
     

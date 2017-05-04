@@ -11,6 +11,10 @@
 // 在需要进行获取登录信息的UIViewController中加入如下代码
 #import <UMSocialCore/UMSocialCore.h>
 
+#import "LTUserHelper.h"
+
+#import "LTTabBarViewController.h"
+
 @interface LTLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *weiboLogin;
 
@@ -43,6 +47,15 @@
             
             // 第三方平台SDK源数据
             NSLog(@"Sina originalResponse: %@", resp.originalResponse);
+            
+            
+            [LTUserHelper sharedUser].nickName = resp.name;
+            [LTUserHelper sharedUser].iconUrl = resp.iconurl;
+            
+            [LTUserHelper saveUser];
+            
+            self.view.window.rootViewController = [[LTTabBarViewController alloc] init];
+            
         }
     }];
     

@@ -31,6 +31,7 @@
 		8D1FAEA11EB8D1A800846F74 /* close_preview@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE961EB8D1A800846F74 /* close_preview@3x.png */; };
 		8D1FAEA21EB8D1A800846F74 /* ios-29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FAE971EB8D1A800846F74 /* ios-29x29.png */; };
 		8D1FAEA61EB8D2B700846F74 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FAEA51EB8D2B700846F74 /* LFLivePreview.m */; };
+		8D4F8BA21EBB3A2E000F675F /* LTUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F8BA11EBB3A2E000F675F /* LTUserHelper.m */; };
 		8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9361EB244E00035C243 /* LTShowHandler.m */; };
 		8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF9391EB2F8540035C243 /* LTLive.m */; };
 		8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF93C1EB3056D0035C243 /* LTCreator.m */; };
@@ -124,6 +125,8 @@
 		8D1FAE971EB8D1A800846F74 /* ios-29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-29x29.png"; sourceTree = "<group>"; };
 		8D1FAEA41EB8D2B700846F74 /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
 		8D1FAEA51EB8D2B700846F74 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
+		8D4F8BA01EBB3A2E000F675F /* LTUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTUserHelper.h; sourceTree = "<group>"; };
+		8D4F8BA11EBB3A2E000F675F /* LTUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTUserHelper.m; sourceTree = "<group>"; };
 		8D6EF9351EB244E00035C243 /* LTShowHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTShowHandler.h; sourceTree = "<group>"; };
 		8D6EF9361EB244E00035C243 /* LTShowHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTShowHandler.m; sourceTree = "<group>"; };
 		8D6EF9381EB2F8540035C243 /* LTLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLive.h; sourceTree = "<group>"; };
@@ -411,6 +414,8 @@
 				8D1FAE6F1EB77E5800846F74 /* LTLocationManager.m */,
 				8D1FAE8B1EB8653E00846F74 /* LTCatch.h */,
 				8D1FAE8C1EB8653E00846F74 /* LTCatch.m */,
+				8D4F8BA01EBB3A2E000F675F /* LTUserHelper.h */,
+				8D4F8BA11EBB3A2E000F675F /* LTUserHelper.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -849,6 +854,7 @@
 				8D6EF93D1EB3056D0035C243 /* LTCreator.m in Sources */,
 				8DF8233F1EB9E2B600235E3C /* AppDelegate+LTUMeng.m in Sources */,
 				8D1FAE811EB7B8B900846F74 /* LTNearCell.m in Sources */,
+				8D4F8BA21EBB3A2E000F675F /* LTUserHelper.m in Sources */,
 				8D1DF1771EB2278F00366B38 /* UIImageView+SDWebImage.m in Sources */,
 				8D1FAEA61EB8D2B700846F74 /* LFLivePreview.m in Sources */,
 				8D6EF93A1EB2F8540035C243 /* LTLive.m in Sources */,
