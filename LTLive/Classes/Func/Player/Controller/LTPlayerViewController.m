@@ -58,6 +58,11 @@
 
 - (void)didClickedCloseBtn:(UIButton *)btn
 {
+    
+//    self.hidesBottomBarWhenPushed = NO;
+    
+    NSLog(@"点击了关闭按钮！");
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

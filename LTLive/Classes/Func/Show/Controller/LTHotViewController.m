@@ -60,6 +60,8 @@ static NSString *identifier = @"LTHotCell";
     
     LTPlayerViewController *playerVC = [[LTPlayerViewController alloc] init];
     
+//    playerVC.hidesBottomBarWhenPushed = YES;
+    
     playerVC.live = live;
     
     [self.navigationController pushViewController:playerVC animated:YES];

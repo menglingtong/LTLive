@@ -24,13 +24,15 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [super pushViewController:viewController animated:animated];
     
     if (self.viewControllers.count) {
         
         viewController.hidesBottomBarWhenPushed = YES;
     }
+    
+    [super pushViewController:viewController animated:animated];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
