@@ -10,11 +10,22 @@
 
 #import "LTVideoCell.h"
 
+#import "LTTabBarViewController.h"
+
 static NSString *identifier = @"LTVideoCell";
 
 @interface LTVideoViewController ()
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
+
+@property (nonatomic, assign) CGFloat contentOffsetY;
+
+@property (nonatomic, assign) CGFloat newContentOffsetY;
+
+@property (nonatomic, assign) CGFloat oldContentOffsetY;
+
+
+@property (nonatomic, assign) CGFloat tabBarOriginalY;
 
 @end
 
@@ -24,7 +35,17 @@ static NSString *identifier = @"LTVideoCell";
 {
     if (!_dataSource) {
         
-        _dataSource = [NSMutableArray array];
+        _dataSource = [NSMutableArray arrayWithObjects:@"http://baobab.wdjcdn.com/145345719887961975219.mp4",
+                                                  @"http://baobab.wdjcdn.com/1461897495660000111.mp4",
+                                                  @"http://baobab.wdjcdn.com/145076769089714.mp4",
+                                                  @"http://baobab.wdjcdn.com/1455782903700jy.mp4",
+                                                  @"http://baobab.wdjcdn.com/1442142801331138639111.mp4",
+                                                  @"http://v.qq.com/boke/page/c/0/c/c0178vk78wc.html",
+                                                  @"http://baobab.wdjcdn.com/143625320119607.mp4",
+                                                  @"http://baobab.wdjcdn.com/143323298510702.mp4",
+                                                  @"http://baobab.wdjcdn.com/14399887845852_x264.mp4",
+                                                  @"http://baobab.wdjcdn.com/1451826889080C.mp4",
+                                                  @"http://baobab.wdjcdn.com/14564977406580.mp4", nil];
         
     }
     
@@ -43,11 +64,27 @@ static NSString *identifier = @"LTVideoCell";
     
     // 初始化UI
     [self initUI];
+    
+    [self initData];
 }
 
 - (void)initUI{
     
     [self.tableView registerNib:[UINib nibWithNibName:@"LTVideoCell" bundle:nil] forCellReuseIdentifier:identifier];
+    
+    LTTabBarViewController *tabBarVC = (LTTabBarViewController *)self.tabBarController;
+    
+    _tabBarOriginalY = tabBarVC.tabBar.frame.origin.y;
+    
+}
+
+- (void)initData{
+    
+    _contentOffsetY = 0;
+    
+    _oldContentOffsetY = 0;
+    
+    _newContentOffsetY = 0;
     
 }
 
@@ -66,12 +103,12 @@ static NSString *identifier = @"LTVideoCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
     
-    return 30;
+    return self.dataSource.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 190;
+    return 300;
 }
 
 
@@ -80,10 +117,108 @@ static NSString *identifier = @"LTVideoCell";
     
     LTVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
+    if (indexPath.row % 2 == 0) {
+        
+        cell.bgImageView.image = [UIImage imageNamed:@"image001"];
+        
+    }
+    else
+    {
+        cell.bgImageView.image = [UIImage imageNamed:@"image002"];
+    }
     
     return cell;
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    
+    _contentOffsetY = scrollView.contentOffset.y;
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+    LTTabBarViewController *tabBarVC = (LTTabBarViewController *)self.tabBarController;
+    
+    
+    _newContentOffsetY = scrollView.contentOffset.y;
+    
+    
+    NSLog(@"new:%f -- old:%f -- pres%f", _newContentOffsetY, _oldContentOffsetY, _contentOffsetY);
+    
+    
+    if (_newContentOffsetY > _oldContentOffsetY && _oldContentOffsetY > _contentOffsetY) {
+        
+        // 向上滚动
+        [self tabBarHidden:tabBarVC];
+        
+    }
+    else if(_newContentOffsetY < _oldContentOffsetY && _oldContentOffsetY < _contentOffsetY)
+    {
+        // 向下滚动
+        [self tabBarShow:tabBarVC];
+    }
+    else
+    {
+        
+        NSLog(@"当前正在拖拽");
+        
+    }
+    
+    
+    if (scrollView.dragging) {
+        
+        if ((scrollView.contentOffset.y - _contentOffsetY) > 5.0f) {  // 向上拖拽
+
+            // 隐藏导航栏和选项栏
+            [self tabBarHidden:tabBarVC];
+            
+            
+        } else if ((_contentOffsetY - scrollView.contentOffset.y) > 5.0f) {   // 向下拖拽
+            
+            // 显示导航栏和选项栏
+            [self tabBarShow:tabBarVC];
+            
+  
+        } else {
+            
+            
+            
+        }
+        
+    }
+    
+    
+    
+    
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    
+    _oldContentOffsetY = scrollView.contentOffset.y;
+}
+
+
+- (void)tabBarHidden:(LTTabBarViewController *)tabBarVC{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        tabBarVC.tabBar.frame = CGRectMake(0, SCREEN_HEIGHT + 40, SCREEN_WIDTH, 44);
+        
+    }];
+}
+
+- (void)tabBarShow:(LTTabBarViewController *)tabBarVC{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        tabBarVC.tabBar.frame = CGRectMake(0, _tabBarOriginalY, SCREEN_WIDTH, 44);
+        
+    }];
+}
 
 /*
 // Override to support conditional editing of the table view.

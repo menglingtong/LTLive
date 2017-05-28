@@ -62,6 +62,9 @@
                     <constraint firstItem="Gr9-li-5MW" firstAttribute="centerY" secondItem="hsP-bw-eZ0" secondAttribute="centerY" id="urx-HN-AgN"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="Nad-K1-Hkr" id="IfW-SQ-kkv"/>
+            </connections>
             <point key="canvasLocation" x="-86" y="-17"/>
         </tableViewCell>
     </objects>

@@ -10,4 +10,6 @@
 
 @interface LTVideoCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+
 @end
