@@ -47,7 +47,7 @@
 {
     if (!_dataSource) {
         
-        _dataSource = @[@"关注", @"热门", @"附近"];
+        _dataSource = @[@"关注", @"热门", @"附近", @"视频"];
     }
     
     return _dataSource;
@@ -72,7 +72,7 @@
 
 - (void)setupChildViewControllers
 {
-    NSArray *vcNames = @[@"LTFocusViewController", @"LTHotViewController", @"LTNearViewController"];
+    NSArray *vcNames = @[@"LTFocusViewController", @"LTHotViewController", @"LTNearViewController", @"LTVideoViewController"];
     
     for (NSInteger i = 0; i < vcNames.count; i++) {
         
