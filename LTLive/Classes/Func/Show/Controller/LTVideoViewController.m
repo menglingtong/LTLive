@@ -12,6 +12,12 @@
 
 #import "LTTabBarViewController.h"
 
+#import <objc/runtime.h>
+
+#import "NSObject+LTRuntime.h"
+
+#import "LTVideoPlayerController.h"
+
 static NSString *identifier = @"LTVideoCell";
 
 @interface LTVideoViewController ()
@@ -31,6 +37,13 @@ static NSString *identifier = @"LTVideoCell";
 
 @implementation LTVideoViewController
 
++ (void)load
+{
+    NSLog(@"开始加载");
+    
+    
+}
+
 - (NSMutableArray *)dataSource
 {
     if (!_dataSource) {
@@ -40,7 +53,6 @@ static NSString *identifier = @"LTVideoCell";
                                                   @"http://baobab.wdjcdn.com/145076769089714.mp4",
                                                   @"http://baobab.wdjcdn.com/1455782903700jy.mp4",
                                                   @"http://baobab.wdjcdn.com/1442142801331138639111.mp4",
-                                                  @"http://v.qq.com/boke/page/c/0/c/c0178vk78wc.html",
                                                   @"http://baobab.wdjcdn.com/143625320119607.mp4",
                                                   @"http://baobab.wdjcdn.com/143323298510702.mp4",
                                                   @"http://baobab.wdjcdn.com/14399887845852_x264.mp4",
@@ -261,6 +273,13 @@ static NSString *identifier = @"LTVideoCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    LTVideoPlayerController *playerVC = [LTVideoPlayerController new];
+    
+    playerVC.url = [self.dataSource objectAtIndex:indexPath.row];
+    
+    [self.navigationController pushViewController:playerVC animated:YES];
+    
 }
 
 

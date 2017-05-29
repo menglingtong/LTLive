@@ -78,6 +78,11 @@
 		8DEFEA991EDAA7D100B24714 /* LTVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEFEA971EDAA7D100B24714 /* LTVideoViewController.xib */; };
 		8DEFEA9D1EDAB08B00B24714 /* LTVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFEA9B1EDAB08B00B24714 /* LTVideoCell.m */; };
 		8DEFEA9E1EDAB08B00B24714 /* LTVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEFEA9C1EDAB08B00B24714 /* LTVideoCell.xib */; };
+		8DEFEAA71EDBEC0B00B24714 /* NSObject+LTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFEAA61EDBEC0B00B24714 /* NSObject+LTRuntime.m */; };
+		8DEFEAB81EDC0A4900B24714 /* LTVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFEAB61EDC0A4900B24714 /* LTVideoPlayerController.m */; };
+		8DEFEAB91EDC0A4900B24714 /* LTVideoPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEFEAB71EDC0A4900B24714 /* LTVideoPlayerController.xib */; };
+		8DEFEABC1EDC0B6100B24714 /* LTPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFEABB1EDC0B6100B24714 /* LTPlayView.m */; };
+		8DEFEABF1EDC0B9500B24714 /* LTPlayControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFEABE1EDC0B9500B24714 /* LTPlayControlView.m */; };
 		8DF823281EB9C91100235E3C /* LTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF823261EB9C91100235E3C /* LTLoginViewController.m */; };
 		8DF823291EB9C91100235E3C /* LTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF823271EB9C91100235E3C /* LTLoginViewController.xib */; };
 		8DF8233F1EB9E2B600235E3C /* AppDelegate+LTUMeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8233E1EB9E2B600235E3C /* AppDelegate+LTUMeng.m */; };
@@ -204,6 +209,15 @@
 		8DEFEA9A1EDAB08B00B24714 /* LTVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoCell.h; sourceTree = "<group>"; };
 		8DEFEA9B1EDAB08B00B24714 /* LTVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoCell.m; sourceTree = "<group>"; };
 		8DEFEA9C1EDAB08B00B24714 /* LTVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTVideoCell.xib; sourceTree = "<group>"; };
+		8DEFEAA51EDBEC0B00B24714 /* NSObject+LTRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LTRuntime.h"; sourceTree = "<group>"; };
+		8DEFEAA61EDBEC0B00B24714 /* NSObject+LTRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LTRuntime.m"; sourceTree = "<group>"; };
+		8DEFEAB51EDC0A4900B24714 /* LTVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoPlayerController.h; sourceTree = "<group>"; };
+		8DEFEAB61EDC0A4900B24714 /* LTVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoPlayerController.m; sourceTree = "<group>"; };
+		8DEFEAB71EDC0A4900B24714 /* LTVideoPlayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTVideoPlayerController.xib; sourceTree = "<group>"; };
+		8DEFEABA1EDC0B6100B24714 /* LTPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPlayView.h; sourceTree = "<group>"; };
+		8DEFEABB1EDC0B6100B24714 /* LTPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPlayView.m; sourceTree = "<group>"; };
+		8DEFEABD1EDC0B9500B24714 /* LTPlayControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPlayControlView.h; sourceTree = "<group>"; };
+		8DEFEABE1EDC0B9500B24714 /* LTPlayControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPlayControlView.m; sourceTree = "<group>"; };
 		8DF823251EB9C91100235E3C /* LTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLoginViewController.h; sourceTree = "<group>"; };
 		8DF823261EB9C91100235E3C /* LTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLoginViewController.m; sourceTree = "<group>"; };
 		8DF823271EB9C91100235E3C /* LTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTLoginViewController.xib; sourceTree = "<group>"; };
@@ -372,6 +386,7 @@
 		8DE44DDC1EAF3618005B12FC /* Func */ = {
 			isa = PBXGroup;
 			children = (
+				8DEFEAA81EDC082400B24714 /* VideoPlayer */,
 				8D6EF9661EB5E6200035C243 /* Player */,
 				8DE44E0A1EB0B628005B12FC /* Live */,
 				8DE44DF01EB05B57005B12FC /* Mine */,
@@ -426,6 +441,8 @@
 				8D1FAE8C1EB8653E00846F74 /* LTCatch.m */,
 				8D4F8BA01EBB3A2E000F675F /* LTUserHelper.h */,
 				8D4F8BA11EBB3A2E000F675F /* LTUserHelper.m */,
+				8DEFEAA51EDBEC0B00B24714 /* NSObject+LTRuntime.h */,
+				8DEFEAA61EDBEC0B00B24714 /* NSObject+LTRuntime.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -613,6 +630,52 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8DEFEAA81EDC082400B24714 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8DEFEAA91EDC082400B24714 /* Controller */,
+				8DEFEAAF1EDC082400B24714 /* Handler */,
+				8DEFEAB01EDC082400B24714 /* Model */,
+				8DEFEAB11EDC082400B24714 /* View */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		8DEFEAA91EDC082400B24714 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DEFEAB51EDC0A4900B24714 /* LTVideoPlayerController.h */,
+				8DEFEAB61EDC0A4900B24714 /* LTVideoPlayerController.m */,
+				8DEFEAB71EDC0A4900B24714 /* LTVideoPlayerController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DEFEAAF1EDC082400B24714 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		8DEFEAB01EDC082400B24714 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DEFEAB11EDC082400B24714 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DEFEABA1EDC0B6100B24714 /* LTPlayView.h */,
+				8DEFEABB1EDC0B6100B24714 /* LTPlayView.m */,
+				8DEFEABD1EDC0B9500B24714 /* LTPlayControlView.h */,
+				8DEFEABE1EDC0B9500B24714 /* LTPlayControlView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8DF823401EB9FB3100235E3C /* UMSocial */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +854,7 @@
 				8D6EF9481EB32FEA0035C243 /* LTHotCell.xib in Resources */,
 				8D1FAE8A1EB8430800846F74 /* LTAdvertiseView.xib in Resources */,
 				8D1FAE9E1EB8D1A800846F74 /* camra_preview@2x.png in Resources */,
+				8DEFEAB91EDC0A4900B24714 /* LTVideoPlayerController.xib in Resources */,
 				8DE44E221EB0FD10005B12FC /* LTNearViewController.xib in Resources */,
 				8D1FAE821EB7B8B900846F74 /* LTNearCell.xib in Resources */,
 				8D1FAEA21EB8D1A800846F74 /* ios-29x29.png in Resources */,
@@ -866,6 +930,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEFEABF1EDC0B9500B24714 /* LTPlayControlView.m in Sources */,
 				8DE44DE71EAF4DD5005B12FC /* ViewController.m in Sources */,
 				8DE44E051EB07F4C005B12FC /* LTMineViewController.m in Sources */,
 				8D1FAE701EB77E5800846F74 /* LTLocationManager.m in Sources */,
@@ -884,7 +949,9 @@
 				8DE44E211EB0FD10005B12FC /* LTNearViewController.m in Sources */,
 				8DE44DE31EAF3618005B12FC /* AppDelegate.m in Sources */,
 				8D1FAE881EB842E000846F74 /* LTAdvertiseView.m in Sources */,
+				8DEFEAB81EDC0A4900B24714 /* LTVideoPlayerController.m in Sources */,
 				8DE44DEC1EB05A35005B12FC /* LTTabBarViewController.m in Sources */,
+				8DEFEABC1EDC0B6100B24714 /* LTPlayView.m in Sources */,
 				8D6EF9371EB244E00035C243 /* LTShowHandler.m in Sources */,
 				8DE44E001EB07F0C005B12FC /* LTMainViewController.m in Sources */,
 				8DE44DC61EAF30E3005B12FC /* main.m in Sources */,
@@ -897,6 +964,7 @@
 				8DE44E171EB0FCC8005B12FC /* LTFocusViewController.m in Sources */,
 				8DE44E091EB081FE005B12FC /* LTBaseNavViewController.m in Sources */,
 				8DE44E1C1EB0FCD3005B12FC /* LTHotViewController.m in Sources */,
+				8DEFEAA71EDBEC0B00B24714 /* NSObject+LTRuntime.m in Sources */,
 				8DEFEA9D1EDAB08B00B24714 /* LTVideoCell.m in Sources */,
 				8DE44E121EB0B652005B12FC /* LTLaunchViewController.m in Sources */,
 				8D1FAE8D1EB8653E00846F74 /* LTCatch.m in Sources */,
