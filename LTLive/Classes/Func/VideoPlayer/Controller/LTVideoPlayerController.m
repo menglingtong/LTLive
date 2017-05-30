@@ -49,7 +49,7 @@
 {
     if (!_playView) {
         
-        _playView = [[LTPlayView alloc] initWithFrame:self.view.bounds];
+        _playView = [[LTPlayView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 300)];
         
     }
     
@@ -69,6 +69,19 @@
 }
 
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    self.navigationController.navigationBar.hidden = NO;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

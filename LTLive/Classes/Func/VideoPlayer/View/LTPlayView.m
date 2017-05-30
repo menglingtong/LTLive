@@ -614,14 +614,14 @@ typedef NS_ENUM(NSUInteger, LTPanState) {
         case UIInterfaceOrientationLandscapeLeft:{
             self.playerControlView.fullScreenBtn.selected = YES;
             [self setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-            self.playerControlView.playBackBtn.hidden = YES;
+            self.playerControlView.playBackBtn.hidden = NO;
             
         }
             break;
         case UIInterfaceOrientationLandscapeRight:{
             self.playerControlView.fullScreenBtn.selected = YES;
             [self setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-            self.playerControlView.playBackBtn.hidden = YES;
+            self.playerControlView.playBackBtn.hidden = NO;
             
         }
             break;
@@ -740,6 +740,7 @@ typedef NS_ENUM(NSUInteger, LTPanState) {
     
     
     [self pause];
+    [self changeOrientation:UIInterfaceOrientationPortrait];
     [self.playerControlView.playBtn setImage:[UIImage imageNamed:@"tipsPlay"] forState:UIControlStateNormal];
     [self.delegate playerGoBack];
 }

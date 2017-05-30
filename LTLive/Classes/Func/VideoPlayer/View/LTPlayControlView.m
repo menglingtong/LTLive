@@ -124,8 +124,6 @@
     // 布局播放按钮
     [_playBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        
-        
         make.top.mas_equalTo(_bottomBackView.top).equalTo(10);
         
         make.left.mas_equalTo(_bottomBackView.left).equalTo(10);
@@ -139,7 +137,7 @@
     // 布局当前时间Label
     [_currentTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(_playBtn.right).offset(10);
+        make.left.equalTo(self.playBtn.right).offset(40);
         
         make.top.equalTo(_bottomBackView.top).offset(5);
         
@@ -149,6 +147,7 @@
         
     }];
     _currentTimeLabel.text = @"00:00";
+    
     
     // 布局全屏按钮
     [_fullScreenBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -168,7 +167,7 @@
         
         make.top.equalTo(_bottomBackView.top).offset(5);
         
-        make.right.equalTo(_fullScreenBtn.left).offset(-10);
+        make.right.equalTo(self.fullScreenBtn.left).offset(-40);
         
         make.bottom.equalTo(_bottomBackView.bottom).offset(-5);
         
@@ -177,14 +176,16 @@
     }];
     _totalTimeLabel.text = @"00:00";
     
+//    _totalTimeLabel.backgroundColor = [UIColor redColor];
+    
     // 布局进度条
     [_playerProgressView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.equalTo(_bottomBackView.top).offset(20);
         
-        make.left.equalTo(_currentTimeLabel.right).offset(10);
+        make.left.equalTo(_currentTimeLabel.right).offset(100);
         
-        make.right.equalTo(_totalTimeLabel.left).offset(-10);
+        make.right.equalTo(_totalTimeLabel.left).offset(-100);
         
         make.height.equalTo(1);
         
@@ -197,9 +198,9 @@
         
         make.top.equalTo(_bottomBackView.top).offset(20);
         
-        make.left.equalTo(_currentTimeLabel.right).offset(10);
+        make.left.equalTo(_currentTimeLabel.right).offset(100);
         
-        make.right.equalTo(_totalTimeLabel.left).offset(-10);
+        make.right.equalTo(_totalTimeLabel.left).offset(-100);
         
         make.height.equalTo(1);
         
